@@ -1,39 +1,45 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using JBOB.Entities;
 using JBOB.Interaction;
+using JBOB.Users;
+using JBOBTests.TestData;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using JBOB;
+using User = JBOB.Entities.User;
 
 namespace JBOBTests.DAL
 {
     [TestClass]
-    public class UserTests
+    public class UserDataAccessTest
     {
+        [TestInitialize]
+        public void TestInitialization()
+        {
+            Wado.ClearDatabase();
+            ObjectMother.Initialize();
+        }
+
         [TestMethod]
-        public void UserAddTest()
+        public void UserAddRepoTest()
         {
             var context = DataContextFactory.CreateContext();
 
             var user = new User
             {
-                Name = "Bob",
-                Surname = "Chino",
-                Login = "bob",
-                Password = "bob123",
-                Roles = new List<Role>
+                Name = "Sandra",
+                Surname = "Johnson",
+                Login = "sandra",
+                Password = "sandra112233",
+                Roles = new List<UserRoleEnum>
                 {
-                    Role.Admin,
-                    Role.HR
+                    UserRoleEnum.Admin,
+                    UserRoleEnum.HR
                 }
             };
 
-           var contextUser = context.UserRepository.AddUser(user);
+            var addedUser = context.UserRepository.AddUser(user);
+            context.SaveChanges();
 
-           context.SaveChanges();
-
-           Assert.AreEqual(user.Name, contextUser.Name);
+            Assert.AreEqual(user.Name, addedUser.Name);
 
         }
     }
