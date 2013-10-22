@@ -39,7 +39,12 @@ namespace Services.Services
             var context = DataContextFactory.CreateContext();
             var users = context.UserRepository.GetAllUsers();
 
-            var mappedUsers = from thisUser in users select thisUser.Map();
+            var mappedUsers = new List<User>();
+
+            foreach (var user in users)
+            {
+                mappedUsers.Add(user.Map());
+            }
 
             return mappedUsers;
         }

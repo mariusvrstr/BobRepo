@@ -1,6 +1,6 @@
-﻿namespace JBOBTests.TestData
+﻿namespace JBOB.TestData
 {
-    internal static partial class ObjectMother
+    public static partial class ObjectMother
     {
         public static void Initialize()
         {

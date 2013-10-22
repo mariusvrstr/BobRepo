@@ -1,16 +1,15 @@
 ﻿using System;
 using System.Collections.Generic;
-using JBOB.Interaction;
 using JBOB.TestData;
 using JBOB.Users;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Services.Controllers;
 using TestData;
-using User = JBOB.Entities.User;
 
-namespace JBOBTests.DAL
+namespace JBOBTests.API
 {
     [TestClass]
-    public class UserDataAccessTest
+    public class UserTests
     {
         [TestInitialize]
         public void TestInitialization()
@@ -18,18 +17,18 @@ namespace JBOBTests.DAL
             Wado.ClearDatabase();
             ObjectMother.Initialize();
         }
-
+        
         [TestMethod]
-        public void UserAddRepoTest()
+        public void UserAddApiTest()
         {
-            var context = DataContextFactory.CreateContext();
+            var controller = new UserController();
 
             var user = new User
             {
-                Name = "Sandra",
-                Surname = "Johnson",
-                Login = "sandra",
-                Password = "sandra112233",
+                Name = "Bob",
+                Surname = "Chino",
+                Login = "bob",
+                Password = "bob123",
                 Roles = new List<UserRoleEnum>
                 {
                     UserRoleEnum.Admin,
@@ -37,11 +36,21 @@ namespace JBOBTests.DAL
                 }
             };
 
-            var addedUser = context.UserRepository.AddUser(user);
-            context.SaveChanges();
-
-            Assert.AreEqual(user.Name, addedUser.Name);
+            controller.Add(user);
             Console.WriteLine(user.ToString());
+        }
+
+        [TestMethod]
+        public void GetAllUsersTest()
+        {
+            var controller = new UserController();
+
+            var users = controller.Get();
+
+            foreach (var user in users)
+            {
+                Console.WriteLine(user.ToString());
+            }
         }
     }
 }

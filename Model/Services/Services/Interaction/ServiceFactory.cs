@@ -4,14 +4,25 @@ using System.Linq;
 using System.Web;
 using JBOB.Users;
 using Services.Services;
+using Services.ServiceStubs;
 
 namespace Services.Interaction
 {
     public static class ServiceFactory
     {
+        internal static bool StubUsers = true;
+        
+
         public static IUserService CreateUserService()
         {
-            return new UserService();
+            if (StubUsers)
+            {
+                return new UserServiceStub();
+            }
+            else
+            {
+                 return new UserService();
+            }
         }
 
 

@@ -1,6 +1,6 @@
 ﻿using JBOB.Interaction;
 
-namespace JBOBTests.TestData
+namespace TestData
 {
     public static class Wado
     {

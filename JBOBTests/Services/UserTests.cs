@@ -1,8 +1,11 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
+using JBOB.TestData;
 using JBOB.Users;
-using JBOBTests.TestData;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Services.Controllers;
+using Services.Interaction;
+using TestData;
 
 namespace JBOBTests.Services
 {
@@ -19,7 +22,7 @@ namespace JBOBTests.Services
         [TestMethod]
         public void UserAddServiceTest()
         {
-            var controller = new UserController();
+            var service = ServiceFactory.CreateUserService();
 
             var user = new User
             {
@@ -34,12 +37,8 @@ namespace JBOBTests.Services
                 }
             };
 
-            controller.Add(user);
-
-            // Use Service to save
-
-            // Assert.AreEqual(user.Name, contextUser.Name);
-
+            service.AddUser(user);
+            Console.WriteLine(user.ToString());
         }
     }
 }
