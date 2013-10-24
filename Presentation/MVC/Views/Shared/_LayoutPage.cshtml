@@ -1,0 +1,55 @@
+﻿@using System.Web.Optimization
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>JBOB Template</title>
+      
+     @Scripts.Render("~/Scripts/jquery")
+     @Styles.Render("~/Content/common_css")
+
+ 
+    <!-- Custom styles for this template -->
+    <link href="css/site.css" rel="stylesheet">
+      
+      <script>
+
+          $().ready(function () {
+              if ($.JBOB.page.initialize != undefined) {
+                  $.JBOB.page.initialize();
+              }
+          });
+
+      </script>  
+
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      @Scripts.Render("~/Scripts/html5shiv.js")
+      <script src="../../assets/js/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+
+      <div class="navbar navbar-inverse navbar-fixed-top">
+          @Html.Partial("_menu")
+      </div>
+
+      <div class="container">
+           @RenderSection("PageContent", true)
+      </div><!-- /.container -->
+      
+     <div id="pageModal"> @RenderSection("PageModal", false) </div>
+      
+      <!-- JavaScript -->
+      @Scripts.Render("~/Scripts/app_common")
+      @RenderSection("PageScripts", true)
+
+  </body>
+</html>

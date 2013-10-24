@@ -1,0 +1,16 @@
+﻿@using System.Web.Optimization
+@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+@section PageContent {
+     <div class="main-content">
+            <h1>Basic twitter bootstrap home</h1>
+            <p class="lead">This is the basic twitter bootstrap template example.</p>
+      </div>
+}
+
+@section PageScripts {
+     @Scripts.Render("/Scripts/Pages/home.js")
+}

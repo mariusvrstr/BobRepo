@@ -1,0 +1,23 @@
+﻿@using System.Web.Optimization
+@{
+    ViewBag.Title = "About";
+    Layout = "~/Views/Shared/_LayoutPage.cshtml";
+}
+
+@section PageContent {
+     <div class="main-content">
+         <h1>MVC Examples</h1>
+         <p class="lead">This page will show the basic MVC content deleviry mechanisms</p>
+
+       <ul style="text-align: left">
+            <li>Razor view inherreting from _Layout (REST HTML controller action)</li>
+            <li>Async Data Refresh (AJAX refresh JSON controller action)</li>
+            <li>Partial View Refresh (HTML swap out controller action) </li>
+        </ul>
+         
+      </div>
+}
+
+@section PageScripts {
+     @Scripts.Render("/Scripts/Pages/about.js")
+}
