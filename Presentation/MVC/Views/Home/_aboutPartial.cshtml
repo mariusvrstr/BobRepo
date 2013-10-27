@@ -1,0 +1,17 @@
+﻿@using JBOB.HtmlHelpers
+@model string
+
+<h2>@Model</h2>
+<ul>
+    <li>@Html.Link("Data Table API documentation","http://datatables.net/api")</li>
+    <li>@Html.Link("Data Table Examples","http://datatables.net/examples/")</li>
+</ul>
+
+<table cellpadding="0" cellspacing="0" border="0" class="table table-striped table-bordered" id="dataTableExample">
+
+</table>
+
+<div class="buttonsGroup">
+    <input type="button" class="btn" onclick="$.JBOB.page.dataAccess.getJsonUserPage()" value="Refresh by AJAX JSon" />
+    <input type="button" class="btn" onclick="$.JBOB.page.dataAccess.getHtmlUserPage()" value="Reload by HTML container" />
+</div>

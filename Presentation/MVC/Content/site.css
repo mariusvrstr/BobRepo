@@ -1,7 +1,35 @@
 body {
   padding-top: 50px;
 }
+
 .main-content {
   padding: 40px 15px;
   text-align: center;
+}
+
+.buttonsGroup {
+    padding: 10px;
+}
+
+.fieldset {
+    margin-bottom: 5px;
+    padding: 5px;
+}
+
+.fieldset legend {
+    margin-bottom: 5px;
+    padding: 5px;
+    margin-bottom: 2px;
+}
+
+.btn {
+    margin: 3px;
+}
+
+.form-group {
+    margin-top: 5px;
+}
+
+.dataTables_wrapper {
+    margin: 25px;
 }

@@ -1,11 +1,6 @@
-﻿//-----------------------------------------------------------------------
-// <copyright file="BundleConfig.cs" company="ABSA">
-//     Copyright ABSA copyright tag
-// </copyright>
-//-----------------------------------------------------------------------
-using Microsoft.Web.Optimization;
+﻿using Microsoft.Web.Optimization;
 
-namespace ABSA.AOR.Web.App_Start
+namespace JBOB.App_Start
 {
     using System.Web.Optimization;
 
@@ -25,11 +20,13 @@ namespace ABSA.AOR.Web.App_Start
                 "~/Scripts/jquery-1.9.1.js"));
 
             bundles.Add(new ScriptBundle("~/Scripts/app_common").Include(
+                "~/Scripts/jquery.dataTables.js",
                 "~/Scripts/bootstrap.min.js",
                 "~/Scripts/common.js"));
 
             bundles.Add(new StyleBundle("~/Content/common_css").Include(
                 "~/Content/site.css",
+                "~/Content/jquery.dataTables.css",
                 "~/Content/bootstrap/bootstrap.css"));
         }
     }

@@ -1,23 +1,67 @@
 ﻿@using System.Web.Optimization
+@model JBOB.Models.AboutViewModel
 @{
     ViewBag.Title = "About";
     Layout = "~/Views/Shared/_LayoutPage.cshtml";
 }
 
 @section PageContent {
-     <div class="main-content">
+     <div class="main-content text-left">
          <h1>MVC Examples</h1>
-         <p class="lead">This page will show the basic MVC content deleviry mechanisms</p>
+         <p class="lead">This page will show site building blocks:</p>
 
-       <ul style="text-align: left">
-            <li>Razor view inherreting from _Layout (REST HTML controller action)</li>
-            <li>Async Data Refresh (AJAX refresh JSON controller action)</li>
-            <li>Partial View Refresh (HTML swap out controller action) </li>
-        </ul>
+         <ul style="text-align: left">
+             <li>Razor view inherreting from _Layout (REST HTML controller action)</li>
+             <li>Async Data Refresh (AJAX refresh JSON controller action)</li>
+             <li>Partial View Refresh (HTML swap out controller action) </li>
+             <li>Basic Twitter bootsrapping</li>
+             <li>JQuery Data Tables with Twitter Bootstrap</li>
+         </ul>
          
-      </div>
+         <fieldset class="fieldset">
+             <legend>Utilities</legend>
+             
+             <ul>
+                 <li>Open Modal</li>
+                 <li>Show Toast</li>
+             </ul>
+
+         </fieldset>
+         
+         <fieldset class="fieldset">
+             <legend>Bootstrap Components</legend>
+             @Html.Partial("_bootstrapPartial")
+         </fieldset>
+         
+         <fieldset class="fieldset">
+             <legend>Partial View</legend>
+             <div id="userPartialWrapper">
+                @Html.Partial("_aboutPartial", Model.Title)
+             </div>
+
+         </fieldset>
+
+         
+     </div>
 }
 
 @section PageScripts {
      @Scripts.Render("/Scripts/Pages/about.js")
+
+    <script>
+
+        $.JBOB.page.links.getUserHtmlUrl = '@("GetUserHtml")';
+        $.JBOB.page.links.getUserJsonUrl = '@("GetUserJson")';
+
+        $().ready(function() {
+            var serverUsers = @Html.Raw(@Json.Encode(new { Model.Users }));
+
+            var tableData = $.JBOB.dataTables.createClientArray(
+                serverUsers.Users,
+                $.JBOB.objectFactory.createClientUser);
+
+            $.JBOB.page.loadUserTable(tableData);
+        });
+
+    </script>
 }
