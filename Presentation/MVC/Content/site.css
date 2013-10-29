@@ -1,7 +1,18 @@
 body {
-  padding-top: 50px;
-}
+    padding-top:10px;
+ font-family:'Segoe UI';
+ width:3000px;
 
+}
+.horizontalContainer {
+    width:auto;
+    height:650px;
+    max-height:650px;
+    box-sizing:border-box;
+    margin-top:40px;
+     overflow-x:scroll;
+     overflow-y:hidden;
+}
 .main-content {
   padding: 40px 15px;
   text-align: center;
@@ -33,3 +44,130 @@ body {
 .dataTables_wrapper {
     margin: 25px;
 }
+/**Menu**/
+.navbar .container {
+    margin-left: 24px;
+}
+.navbar-inverse {
+    background-color: #686868;
+}
+.navbar-inverse .navbar-brand {
+    color: #fff;
+}
+ul.navbar-nav {
+    width: 100px;
+    float: Right;
+    border-left: 2px solid #01a4ef;
+    margin-top:10px;
+}
+.navbar-nav > li > a {
+    background-color: #686868!important;
+    font-size:18px;
+    padding:5px 5px;
+    width:100%;
+}
+/**Home Layout**/
+#homeSect , #profSect{
+    max-width: 1024px;
+    display:inline;
+    width:Auto;
+    
+}
+    #homeSect Div {
+        float: left;
+        box-sizing:border-box;
+    }
+    #homeSect Section {
+        width: 60%;
+        max-width:615px;
+        float:left;
+    }
+        #homeSect Section:first-child {
+            width: 40%;
+            margin-top:100px;
+            box-sizing:border-box;
+            float:left;
+        }
+    #homeSect Header {        
+        width:100%;
+    }
+    #homeSect H1 {
+        box-sizing:border-box;
+        padding-left:20px;
+        width:100%;
+        font-size:50px;
+    }
+    #homeSect article {
+        width:100%;
+         text-wrap:normal;
+         padding-left:30px;
+        
+    }
+    /***Button Sizes***/
+
+#colLeft , #colRight {
+    width: 50%;
+    float:left;
+    box-sizing:border-box;
+    padding:0px 5px;
+}
+.bigBtn {
+   min-height:250px; 
+}
+.bigBtn ,  .medBtn {
+        box-sizing: border-box;
+        width:100%;
+        float: left;
+        max-width:305px;
+        margin-top:5px;
+    }
+.smallBtn {
+    box-sizing: border-box;
+    width: 50%;
+    float:left;
+    max-width:150px;
+    margin-top:5px;
+}
+.bigBtn label , .medBtn label , .smallBtn label  {
+    display: block;
+    height: 20%;
+    width: 100%;
+    color: #fff;
+    font-weight:normal;
+}
+/***Button Colours***/
+.green {
+    background-color:#7fba00;
+}
+.red {
+    background-color:#f25022;
+}
+.blue {
+    background-color:#01a4ef;
+}
+.yellow {
+    background-color:#ffb901;
+}
+        
+/**Profile Page**/
+#profSect {
+    width: Auto;
+    max-width:1024px;
+    float:left;
+    background-color:purple;
+}
+/*****COLOURS*****/
+/*
+    red #f25022;
+    Green #7fba00;
+    Blue #01a4ef;
+    Yellow #ffb901;
+    Black #2e2e2e;
+    Grey #686868;
+    --Overlays--
+    red #eb2e10;
+    Green #408800;
+    Blue #0069df;
+    Yellow #ff8601;
+
+    */

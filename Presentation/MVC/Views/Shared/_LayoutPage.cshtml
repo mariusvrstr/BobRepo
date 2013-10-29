@@ -23,6 +23,16 @@
               }
           });
 
+          $(document).ready(function ($) {
+              $("html, body").mousewheel(function (e, delta) {
+                  $('html, body').stop().animate({ scrollLeft: '-=' + (150 * delta) + 'px' }, 200, 'easeOutQuint');
+                  e.preventDefault();
+              });
+          });
+          function scrollhome() {
+              $('html, body').stop().animate({ scrollLeft: '0px' }, 1000, 'easeOutQuint');
+          }
+
       </script>  
       
       <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -34,12 +44,13 @@
 
   <body>
 
-      <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar navbar-inverse navbar-fixed-top ">
           @Html.Partial("_menu")
       </div>
 
-      <div class="container">
-           @RenderSection("PageContent", true)
+      <div class="horizontalContainer">
+           @*@RenderSection("PageContent", true)*@
+          @RenderBody()
       </div><!-- /.container -->
       
      <div id="pageModal"> @RenderSection("PageModal", false) </div>

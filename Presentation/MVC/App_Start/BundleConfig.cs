@@ -22,12 +22,13 @@ namespace JBOB.App_Start
             bundles.Add(new ScriptBundle("~/Scripts/app_common").Include(
                 "~/Scripts/jquery.dataTables.js",
                 "~/Scripts/bootstrap.min.js",
-                "~/Scripts/common.js"));
+                "~/Scripts/common.js",
+                "~/Scripts/Scrolling.js"));
 
             bundles.Add(new StyleBundle("~/Content/common_css").Include(
+               "~/Content/bootstrap/bootstrap.css",
                 "~/Content/site.css",
-                "~/Content/jquery.dataTables.css",
-                "~/Content/bootstrap/bootstrap.css"));
+                "~/Content/jquery.dataTables.css" ));
         }
     }
 }
