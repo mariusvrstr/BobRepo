@@ -1,7 +1,7 @@
 body {
     padding-top:10px;
  font-family:'Segoe UI';
- width:3000px;
+ width:6000px;
 
 }
 .horizontalContainer {
@@ -44,6 +44,12 @@ body {
 .dataTables_wrapper {
     margin: 25px;
 }
+input , select {
+    border-width:2px;
+    color:#dcdcdc;
+    height:30px;
+    line-height:30px;
+}
 /**Menu**/
 .navbar .container {
     margin-left: 24px;
@@ -68,7 +74,6 @@ ul.navbar-nav {
 }
 /**Home Layout**/
 #homeSect , #profSect{
-    max-width: 1024px;
     display:inline;
     width:Auto;
     
@@ -113,6 +118,7 @@ ul.navbar-nav {
 }
 .bigBtn {
    min-height:250px; 
+   
 }
 .bigBtn ,  .medBtn {
         box-sizing: border-box;
@@ -120,6 +126,7 @@ ul.navbar-nav {
         float: left;
         max-width:305px;
         margin-top:5px;
+        cursor:pointer;
     }
 .smallBtn {
     box-sizing: border-box;
@@ -127,6 +134,7 @@ ul.navbar-nav {
     float:left;
     max-width:150px;
     margin-top:5px;
+    cursor:pointer;
 }
 .bigBtn label , .medBtn label , .smallBtn label  {
     display: block;
@@ -152,10 +160,96 @@ ul.navbar-nav {
 /**Profile Page**/
 #profSect {
     width: Auto;
-    max-width:1024px;
     float:left;
-    background-color:purple;
 }
+    #profSect section {
+        float:left;
+        width:400px;
+        height:500px;
+        margin-left:50px;
+    }
+        #profSect section.profContact {
+            width:300px;
+        }
+        #profSect section h1{
+            font-family:'Segoe UI';
+        }
+        #profSect section.profDetails > ul ,  #profSect section#profScore > ul {
+            padding: 0px;
+            margin: 0px;
+        }
+        #profSect section.profDetails > ul > li ,  #profSect section#profScore > ul > li{
+           list-style-type:none;
+           line-height:30px;
+           margin-bottom:5px;
+           width:100%;
+           float:left;
+        }
+            #profSect section.profDetails > ul > li label {
+                display: block;
+                font-weight:normal;
+                font-size:16px;
+            }
+            #profSect section.profDetails > ul > li.nameDetails input {
+                margin-right:5px;
+                Width:190px;
+                float:left;
+            }
+        #profSect section#company .btn-group {
+            width:100%;
+        }
+        #profSect section#company .btn-group button{
+            width:80%;
+            text-align:right;
+        }
+        #profSect section#profScore ul {
+            margin-top: 30px;
+        }
+#profSect section#profScore div.scoreDiv {
+    width:100%;
+    float:left;
+
+}
+    #profSect section#profScore div.scoreDiv Div {
+        width: 120px;
+        float: left;
+        margin-bottom:10px;
+    }
+#profSect section#profScore div.scoreDiv .block {
+    width: 80px;
+    height:80px;
+    float: left;
+}
+        #profSect section#profScore .block label {
+            box-sizing:border-box;
+            display:block;
+            position:relative;
+            top:50px;
+            padding-right:5px;
+            text-align:right;
+            width:100%;
+            font-size:18px;
+            font-weight:normal;
+        }
+        #profSect section#profScore .scoreDiv .scoreText label {
+            font-size: 22px;
+            font-weight: normal;
+            line-height: 24px;
+            padding-left:5px;
+            margin-bottom:0px;
+        }
+        #profSect section#profScore .scoreDiv .scoreText p {
+            padding-left: 5px;
+            margin: 0px;
+            line-height:16px;
+        }
+#profSect section#submitSect {
+            width: 1024px;
+            height:30px;
+            background-color:pink;
+            clear:both;     
+            position:relative;       
+        }
 /*****COLOURS*****/
 /*
     red #f25022;
