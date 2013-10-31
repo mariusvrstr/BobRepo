@@ -121,6 +121,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="Common\ViewModelBase.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\MyProfileController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -169,6 +170,7 @@
     <Content Include="Scripts\Pages\about.js" />
     <Content Include="Scripts\Pages\home.js" />
     <Content Include="Scripts\respond.min.js" />
+    <Content Include="Scripts\Scrolling.js" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
@@ -182,6 +184,9 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\_aboutPartial.cshtml" />
     <Content Include="Views\Home\_bootstrapPartial.cshtml" />
+    <Content Include="Views\MyProfile\Index.cshtml" />
+    <Content Include="Views\Home\_profilePartial.cshtml" />
+    <Content Include="Views\Home\_homePartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
