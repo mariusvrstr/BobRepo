@@ -2,6 +2,7 @@ body {
     padding-top:10px;
  font-family:'Segoe UI';
  width:6000px;
+ 
 
 }
 .horizontalContainer {
@@ -12,12 +13,16 @@ body {
     margin-top:40px;
      overflow-x:scroll;
      overflow-y:hidden;
+    min-height:768px;
+
 }
 .main-content {
   padding: 40px 15px;
   text-align: center;
 }
-
+.marginRight {
+    margin-right: 2%;
+}
 .buttonsGroup {
     padding: 10px;
 }
@@ -73,21 +78,25 @@ ul.navbar-nav {
     width:100%;
 }
 /**Home Layout**/
-#homeSect , #profSect{
+/*#homeSect , #profSect{
     display:inline;
-    width:Auto;
-    
+    width:Auto;    
+}*/
+#homeSect {
+    max-width: 1280px;
+    width:1280px;
+    float:left;
 }
+
     #homeSect Div {
         float: left;
         box-sizing:border-box;
     }
-    #homeSect Section {
+    #homeSect #tileSect {
         width: 60%;
-        max-width:615px;
         float:left;
     }
-        #homeSect Section:first-child {
+        #homeSect #welcomeSect {
             width: 40%;
             margin-top:100px;
             box-sizing:border-box;
@@ -103,7 +112,7 @@ ul.navbar-nav {
         font-size:50px;
     }
     #homeSect article {
-        width:100%;
+        width:345px;
          text-wrap:normal;
          padding-left:30px;
         
@@ -120,28 +129,37 @@ ul.navbar-nav {
    min-height:250px; 
    
 }
+.medBtn, .smallBtn {
+    height: 122px;
+}
 .bigBtn ,  .medBtn {
         box-sizing: border-box;
         width:100%;
         float: left;
-        max-width:305px;
+        /*max-width:305px;*/
         margin-top:5px;
         cursor:pointer;
     }
 .smallBtn {
     box-sizing: border-box;
-    width: 50%;
     float:left;
-    max-width:150px;
     margin-top:5px;
     cursor:pointer;
+    width:49%;
 }
 .bigBtn label , .medBtn label , .smallBtn label  {
     display: block;
-    height: 20%;
+    height: 25%;
+    line-height:110%;
     width: 100%;
     color: #fff;
     font-weight:normal;
+    font-size:20px;
+    padding-left:2%;
+}
+.bigBtn label {
+    font-size: 22px;
+    line-height:110%;
 }
 /***Button Colours***/
 .green {
@@ -156,17 +174,42 @@ ul.navbar-nav {
 .yellow {
     background-color:#ffb901;
 }
-        
+ .green label{
+    background-color:#408800;
+}
+.red label{
+    background-color:#eb2e10;
+}
+.blue label{
+    background-color:#0069df;
+}
+.yellow label{
+    background-color:#ff8601;
+} 
+      
 /**Profile Page**/
+
 #profSect {
     width: Auto;
     float:left;
 }
     #profSect section {
         float:left;
-        width:400px;
+        max-width:400px;
+        width:auto;
         height:500px;
         margin-left:50px;
+    }
+    #profSect #profImg {
+        padding-top: 60px;
+    }
+    #profSect #profImg div {
+        width: 120px;
+        height:120px;
+    }      
+    #profSect #profImg img {
+        height: 100%;
+        width: 100%;
     }
         #profSect section.profContact {
             width:300px;
@@ -220,7 +263,7 @@ ul.navbar-nav {
     height:80px;
     float: left;
 }
-        #profSect section#profScore .block label {
+        #profSect section#profScore .block label , #profSect section#tileSect label{
             box-sizing:border-box;
             display:block;
             position:relative;
@@ -228,7 +271,7 @@ ul.navbar-nav {
             padding-right:5px;
             text-align:right;
             width:100%;
-            font-size:18px;
+            font-size:22px;
             font-weight:normal;
         }
         #profSect section#profScore .scoreDiv .scoreText label {
@@ -237,7 +280,11 @@ ul.navbar-nav {
             line-height: 24px;
             padding-left:5px;
             margin-bottom:0px;
+            background-color:transparent;
         }
+    #profSect section#profScore .block label {
+        background-color: transparent;
+    }
         #profSect section#profScore .scoreDiv .scoreText p {
             padding-left: 5px;
             margin: 0px;
@@ -250,6 +297,31 @@ ul.navbar-nav {
             clear:both;     
             position:relative;       
         }
+#profBadge {
+    max-width: 300px;
+}
+    #profBadge ul {
+        margin: 0px;
+        padding: 0px;
+    }
+        #profBadge ul li {
+            list-style-type: none;
+            display: inline-block;
+            float: left;
+            width: 50%;
+            padding:2%;
+        }
+            #profBadge ul li div {
+                height: 100px;
+                width: 100%;
+                background-color: pink;
+            }
+                #profBadge ul li div.bdgStar {
+                    height: 30px;
+                    width:100%;
+                    background-color:gold;
+
+                }
 /*****COLOURS*****/
 /*
     red #f25022;
