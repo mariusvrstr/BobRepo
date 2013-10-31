@@ -39,14 +39,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cards\Card.cs" />
+    <Compile Include="Cards\CardCategoryEnum.cs" />
+    <Compile Include="Cards\ActivityTypeEnum.cs" />
+    <Compile Include="Challenges\Challenge.cs" />
+    <Compile Include="Departments\Department.cs" />
+    <Compile Include="Organizations\Organization.cs" />
+    <Compile Include="Organizations\OrganizationTypeEnum.cs" />
     <Compile Include="Users\IUserService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Users\User.cs" />
     <Compile Include="Users\UserRoleEnum.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Initiatives\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

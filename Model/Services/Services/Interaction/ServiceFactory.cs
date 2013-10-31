@@ -10,7 +10,7 @@ namespace Services.Interaction
 {
     public static class ServiceFactory
     {
-        internal static bool StubUsers = true;
+        internal static bool StubUsers = false;
         
 
         public static IUserService CreateUserService()

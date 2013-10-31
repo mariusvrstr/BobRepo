@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using System.Web.Http;
+using System.Web.Mvc;
 using JBOB.Users;
 using Services.Interaction;
 
@@ -7,6 +8,19 @@ namespace Services.Controllers
 {
     public class UserController : ApiController
     {
+
+        /* Exception: throw new HttpResponseException(HttpStatusCode.BadRequest)
+         * http://localhost:1079/api/User
+         * 
+         * JsonResult / return this.Json(partialAboutBoxJson, JsonRequestBehavior.AllowGet);
+         * 
+         * 
+         * 
+         * 
+         * */
+
+
+
         // GET api/user
         public IEnumerable<User> Get()
         {

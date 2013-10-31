@@ -49,6 +49,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Entities\Card.cs" />
+    <Compile Include="Entities\Challenge.cs" />
+    <Compile Include="Entities\Department.cs" />
+    <Compile Include="Entities\Organization.cs" />
+    <Compile Include="Entities\Profile.cs" />
     <Compile Include="Mapper\Mapper.cs" />
     <Compile Include="Switcher\ContextSwitcher.cs" />
     <Compile Include="DataContext.cs" />
