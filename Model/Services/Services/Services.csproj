@@ -117,6 +117,7 @@
     <Compile Include="ServiceStubs\CardServiceStub.cs" />
     <Compile Include="ServiceStubs\UserServiceStub.cs" />
     <Compile Include="Services\CardService.cs" />
+    <Compile Include="Services\SerendiptyMeta.cs" />
     <Compile Include="Services\UserService.cs" />
   </ItemGroup>
   <ItemGroup>
