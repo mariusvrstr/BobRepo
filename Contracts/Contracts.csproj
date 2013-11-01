@@ -42,6 +42,7 @@
     <Compile Include="Cards\Card.cs" />
     <Compile Include="Cards\CardCategoryEnum.cs" />
     <Compile Include="Cards\ActivityTypeEnum.cs" />
+    <Compile Include="Cards\ICardService.cs" />
     <Compile Include="Challenges\Challenge.cs" />
     <Compile Include="Departments\Department.cs" />
     <Compile Include="Organizations\Organization.cs" />

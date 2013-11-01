@@ -7,7 +7,7 @@ namespace JBOB.Interaction
     {
         public static IContextSwitcher CreateContext()
         {
-            return new DataContext();;
+            return new DataContext();
         }
     }
 }
