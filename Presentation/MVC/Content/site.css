@@ -312,7 +312,7 @@ ul.navbar-nav {
             padding:2%;
         }
             #profBadge ul li div {
-                height: 100px;
+                height: 120px;
                 width: 100%;
             }
                 #profBadge ul li div.bdgStar {
@@ -336,25 +336,25 @@ ul.navbar-nav {
        background:url("images/SpriteBadges.png") 10px -15px no-repeat;
    }
    #bdgTwo div#Twobdg{
-       background:url("images/SpriteBadges.png") 10px -400px no-repeat;
+       background:url("images/SpriteBadges.png") 10px -410px no-repeat;
    }
    #bdgThree div#Threebdg{
        background:url("images/SpriteBadges.png") 10px -145px no-repeat;
    }
    #bdgFour div#Fourbdg{
-       background:url("images/SpriteBadges.png") 10px -215px no-repeat;
+       background:url("images/SpriteBadges.png") 10px -535px no-repeat;
    }
    #bdgFive div#Fivebdg{
-       background:url("images/SpriteBadges.png") 10px -215px no-repeat;
+       background:url("images/SpriteBadges.png") 10px -535px no-repeat;
    }
    #bdgSix div#Sixbdg{
        background:url("images/SpriteBadges.png") 10px -275px no-repeat;
    }
    #bdgSeven div#Sevenbdg{
-       background:url("images/SpriteBadges.png") 10px -215px no-repeat;
+       background:url("images/SpriteBadges.png") 10px -535px no-repeat;
    }
    #bdgEight div#Eightbdg{
-       background:url("images/SpriteBadges.png") 10px -215px no-repeat;
+       background:url("images/SpriteBadges.png") 10px -535px no-repeat;
    }
    
    #bdgTwo{}
