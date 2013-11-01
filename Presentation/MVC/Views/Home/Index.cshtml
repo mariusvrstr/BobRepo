@@ -4,7 +4,7 @@
     Layout = "~/Views/Shared/_LayoutPage.cshtml";
 }
 
-@section PageContent {
+@* @section PageContent {*@
      
     <Section id="homeSect">
 
@@ -15,11 +15,11 @@
     </Section>
     <section id="cardCreate">
         @{Html.RenderPartial("_cardCreatePartial");}
-    </section>
+    </section> 
 
 
 
-}
+@*  } *@
 
 @section PageScripts {
      @Scripts.Render("/Scripts/Pages/home.js")
