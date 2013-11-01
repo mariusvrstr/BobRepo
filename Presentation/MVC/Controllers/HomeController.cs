@@ -1,14 +1,16 @@
 ﻿using Antlr.Runtime.Misc;
 using JBOB.Models;
-using JBOB.Users;
 using System.Collections.Generic;
 using System.Web.Mvc;
+using JBOB.Users;
 
 namespace JBOB.Controllers
 {
     public class HomeController : Controller
     {
         #region Stub Data
+
+        /*
 
         private List<User> userSetA = new List<User> 
         {
@@ -86,7 +88,7 @@ namespace JBOB.Controllers
                 },
                 Surname= "Jones"
             }
-        };
+        }; */
 
         #endregion
 
@@ -99,7 +101,7 @@ namespace JBOB.Controllers
         {
             var viewModel = new AboutViewModel
             {
-                Users = userSetA,
+               // Users = userSetA,
                 Title = "First load"
             };
             
@@ -110,7 +112,7 @@ namespace JBOB.Controllers
         {
             var viewModel = new AboutViewModel
             {
-                Users = userSetB
+             //   Users = userSetB
             };
 
             return this.Json(viewModel.Users, JsonRequestBehavior.AllowGet);

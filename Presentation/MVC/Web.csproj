@@ -209,13 +209,13 @@
     <Content Include="Views\Shared\_menu.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\ContractsPCL\ContractsPCL.csproj">
-      <Project>{385c9a3f-3adf-4863-911b-49f09fc6f64c}</Project>
-      <Name>ContractsPCL</Name>
-    </ProjectReference>
     <ProjectReference Include="..\..\TestData\TestData.csproj">
       <Project>{61a7a4b2-b3b6-4905-9c05-ba0ef9c2b88e}</Project>
       <Name>TestData</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\WebContracts\WebContracts.csproj">
+      <Project>{99a85c3c-bc03-4b68-b0a6-52f9e42c2296}</Project>
+      <Name>WebContracts</Name>
     </ProjectReference>
   </ItemGroup>
   <PropertyGroup>

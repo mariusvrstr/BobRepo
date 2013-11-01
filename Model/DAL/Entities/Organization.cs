@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using JBOB.Organizations;
 
-namespace JBOB.Entities
+namespace JBOB.Database.Entities
 {
     public class Organization
     {

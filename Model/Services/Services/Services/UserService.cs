@@ -1,5 +1,5 @@
 ﻿
-namespace Services.Services
+namespace JBOB.Services
 {
     using System.Collections.Generic;
     using System.Linq;

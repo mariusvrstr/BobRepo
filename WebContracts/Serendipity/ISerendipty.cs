@@ -4,11 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JBOB.Cards
+namespace JBOB.Serendipty
 {
-    public interface ICardService
+    public interface ISerendiptyMeta
     {
-        Card AddCard(Card card);
-        IEnumerable<Card> GetAllCards();
+        string RetrieveMetaData(string input);
     }
 }

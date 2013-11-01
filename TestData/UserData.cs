@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using JBOB.Interaction;
 using JBOB.Users;
-using User = JBOB.Entities.User;
+using User = JBOB.Database.Entities.User;
 
 namespace JBOB.TestData
 {

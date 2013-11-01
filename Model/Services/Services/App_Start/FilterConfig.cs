@@ -1,7 +1,6 @@
-﻿using System.Web;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
-namespace Services
+namespace JBOB.Services.App_Start
 {
     public class FilterConfig
     {

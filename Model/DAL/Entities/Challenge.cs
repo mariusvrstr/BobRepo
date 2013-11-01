@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace JBOB.Entities
+namespace JBOB.Database.Entities
 {
     public class Challenge
     {

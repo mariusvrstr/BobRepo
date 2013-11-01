@@ -2,7 +2,7 @@
 namespace JBOB
 {
     using System.Data.Entity;
-    using Entities;
+    using Database.Entities;
     
     internal partial class DataContext : DbContext
     {

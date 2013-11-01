@@ -5,7 +5,7 @@ using JBOB.TestData;
 using JBOB.Users;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using TestData;
-using User = JBOB.Entities.User;
+using User = JBOB.Database.Entities.User;
 
 namespace JBOBTests.DAL
 {
