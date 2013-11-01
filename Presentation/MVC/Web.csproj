@@ -187,6 +187,7 @@
     <Content Include="Views\MyProfile\Index.cshtml" />
     <Content Include="Views\Home\_profilePartial.cshtml" />
     <Content Include="Views\Home\_homePartial.cshtml" />
+    <Content Include="Views\Home\_cardCreatePartial.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
