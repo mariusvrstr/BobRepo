@@ -7,5 +7,6 @@ namespace JBOB.Repositories
     {
         Card AddCard(Card card);
         IQueryable<Card> GetAllCards();
+        void DeleteAllCards();
     }
 }

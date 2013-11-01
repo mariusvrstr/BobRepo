@@ -19,5 +19,15 @@ namespace JBOB
         {
             return Queryable.Select<Card, Card>(this.Cards, thisCard => thisCard);
         }
+
+        public void DeleteAllCards()
+        {
+            var cards = this.GetAllCards();
+
+            foreach (var card in cards.Where(card => card != null))
+            {
+                this.Cards.Remove(card);
+            }
+        }
     }
 }

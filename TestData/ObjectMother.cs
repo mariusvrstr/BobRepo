@@ -5,6 +5,7 @@
         public static void Initialize()
         {
             Users.Initialize();
+            Cards.Initialize();
         }
     }
 }

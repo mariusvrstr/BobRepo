@@ -9,9 +9,9 @@ namespace TestData
             var context = DataContextFactory.CreateContext();
 
             context.UserRepository.DeleteAllUsers();
+            context.CardRepository.DeleteAllCards();
 
             context.SaveChanges();
-
         }
     }
 }
