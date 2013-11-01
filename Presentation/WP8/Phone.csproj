@@ -97,6 +97,15 @@
     <Compile Include="BusinessLayer\Common\ErrorHandler.cs" />
     <Compile Include="BusinessLayer\Common\MessageDialog.cs" />
     <Compile Include="BusinessLayer\Common\WebRequestCustom.cs" />
+    <Compile Include="BusinessLayer\Contracts\DSL\Cards\ActivityTypeEnum.cs" />
+    <Compile Include="BusinessLayer\Contracts\DSL\Cards\Card.cs" />
+    <Compile Include="BusinessLayer\Contracts\DSL\Cards\CardCategoryEnum.cs" />
+    <Compile Include="BusinessLayer\Contracts\DSL\Challenges\Challenge.cs" />
+    <Compile Include="BusinessLayer\Contracts\DSL\Departments\Department.cs" />
+    <Compile Include="BusinessLayer\Contracts\DSL\Organizations\Organization.cs" />
+    <Compile Include="BusinessLayer\Contracts\DSL\Organizations\OrganizationTypeEnum.cs" />
+    <Compile Include="BusinessLayer\Contracts\DSL\Users\User.cs" />
+    <Compile Include="BusinessLayer\Contracts\DSL\Users\UserRoleEnum.cs" />
     <Compile Include="BusinessLayer\Contracts\Gateway\ICardGateway.cs" />
     <Compile Include="BusinessLayer\Contracts\Logic\IDepotLogic.cs" />
     <Compile Include="BusinessLayer\Implementation\Gateway\CardGateway.cs" />
@@ -201,12 +210,6 @@
     <Reference Include="System.Windows.Interactivity, Version=3.9.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\..\packages\MvvmLightLibs.4.2.30.0\lib\wp8\System.Windows.Interactivity.dll</HintPath>
     </Reference>
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\ContractsPCL\ContractsPCL.csproj">
-      <Project>{385C9A3F-3ADF-4863-911B-49F09FC6F64C}</Project>
-      <Name>ContractsPCL</Name>
-    </ProjectReference>
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
