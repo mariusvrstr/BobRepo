@@ -7,8 +7,8 @@
     <ProjectGuid>{DCDE14F5-8FF6-434F-871D-70ECF3EF5BE8}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>JBOB</RootNamespace>
-    <AssemblyName>JBOB</AssemblyName>
+    <RootNamespace>JBOB.Database</RootNamespace>
+    <AssemblyName>JBOB.Database</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <TargetFrameworkProfile />
@@ -72,9 +72,9 @@
     <None Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\ContractsPCL\ContractsPCL.csproj">
-      <Project>{385c9a3f-3adf-4863-911b-49f09fc6f64c}</Project>
-      <Name>ContractsPCL</Name>
+    <ProjectReference Include="..\..\WebContracts\WebContracts.csproj">
+      <Project>{99a85c3c-bc03-4b68-b0a6-52f9e42c2296}</Project>
+      <Name>WebContracts</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

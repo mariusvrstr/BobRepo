@@ -1,11 +1,10 @@
-﻿
-namespace Services.Services
-{
-    using System.Collections.Generic;
-    using JBOB.Cards;
-    using JBOB.Interaction;
-    using JBOB.Mapper;
+﻿using System.Collections.Generic;
+using JBOB.Cards;
+using JBOB.Interaction;
+using JBOB.Mapper;
 
+namespace JBOB.Services.Services
+{
     public class CardService : ICardService
     {
 

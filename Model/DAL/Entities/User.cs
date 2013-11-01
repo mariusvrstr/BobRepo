@@ -7,7 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using JBOB.Users;
 
-namespace JBOB.Entities
+namespace JBOB.Database.Entities
 {
     public class User
     {

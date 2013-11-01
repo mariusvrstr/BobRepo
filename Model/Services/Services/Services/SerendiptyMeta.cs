@@ -3,7 +3,7 @@ using System.IO;
 using JBOB.Serendipty;
 
 
-namespace Services.Services
+namespace JBOB.Services
 {
     public class SerendiptyMeta : ISerendiptyMeta
     {

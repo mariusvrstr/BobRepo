@@ -5,7 +5,7 @@ using System.Web;
 using JBOB.Cards;
 using JBOB.Serendipty;
 using JBOB.Users;
-using Services.Services;
+using JBOB.Services;
 using Services.ServiceStubs;
 
 namespace Services.Interaction

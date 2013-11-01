@@ -1,5 +1,5 @@
 ﻿using System.Linq;
-using JBOB.Entities;
+using JBOB.Database.Entities;
 
 namespace JBOB.Repositories
 {

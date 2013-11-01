@@ -1,6 +1,6 @@
 ﻿using Microsoft.Web.Optimization;
 
-namespace JBOB.App_Start
+namespace JBOB.Web.App_Start
 {
     using System.Web.Optimization;
 
