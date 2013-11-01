@@ -1,33 +1,55 @@
 ﻿<section id="cardCreate">
-    <h1>Create a card</h1>  
-    <div class="form-control">
-        <ul>
-            <li>
-                <label></label>Card Title
-                <input type="text"/>
-            </li> 
-            <li>
-                <label>Image</label>
-                <input type="file"/>
-            </li>
-            <li>
-                <label>Catergory</label>
-                <div class="dropdown">
-  <button class="btn dropdown-toggle sr-only" type="button" id="dropdownMenu1" data-toggle="dropdown">
-    Dropdown
-    <span class="caret"></span>
-  </button>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu1">
-                    <li>Charity</li>
-                    <li>Sustainabilty</li>
-                    <li>Forna/Flora</li>
-                    <li>Children</li>
-                </ul>
+    <h1>Create a card</h1> 
+    <ul >
+        <li>
+            <div class="form-group">
+                <label for="titleInput">Card Title</label>
+                <input type="text" class="form-control" id="titleInput" placeholder="First Name">
+            </div>
+            
+        </li>
+        <li>
+            <div class="form-group">
+            <label>Card Image</label>
+            <div class="form-group">
+                <input type="file" id="exampleInputFile">
+            </div>
                 </div>
-            </li>
-            <li>Type</li>
-            <li>Description</li>
-        </ul>
+        </li>
+        <li>
+            <div class="form-group">
+                <label>Card Type</label>
+                <div class="btn-group">
+                    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                        Please Select <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a href="#">Do Card</a></li>
+                        <li><a href="#">Will Card</a></li>
+                        <li><a href="#">Give Card</a></li>                            
+                    </ul>
+                </div>
+            </div>
+            
+        </li>
+        <li>
+            <div class="form-group">
+                <label for="exampleInputEmail1">Catergory</label>
+                
+            <div class="btn-group">
+            <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+             Please Select <span class="caret"></span>
+              </button>
+              <ul class="dropdown-menu" role="menu">
+                <li><a href="#">Flora/Fauna</a></li>
+                <li><a href="#">Sustainabilty</a></li>
+                  <li><a href="#">Charity</a></li>       
+                   <li><a href="#">Schooling</a></li>
+              </ul>
+            </div>
+            </div>
+        </li>
+    </ul>
         
-    </div>
+  
 </section>
