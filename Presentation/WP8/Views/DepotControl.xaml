@@ -1,15 +1,41 @@
-﻿<UserControl x:Class="WP8.Views.DepotControl"
-    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    mc:Ignorable="d"
+﻿<UserControl xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" xmlns:Command="clr-namespace:GalaSoft.MvvmLight.Command;assembly=GalaSoft.MvvmLight.Extras.WP8" xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone" x:Class="WP8.Views.DepotControl"
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
-    DataContext="{Binding Source={StaticResource ViewModelLocator}, Path=DepotViewModel}">
-    
-    <Grid x:Name="LayoutRoot">
-        <TextBlock Text="Depot Control" />
+    DataContext="{Binding DepotViewModel, Source={StaticResource ViewModelLocator}}" mc:Ignorable="d">
+
+	<i:Interaction.Triggers>
+		<i:EventTrigger EventName="Loaded">
+			<Command:EventToCommand Command="{Binding LoadedCommand, Mode=OneWay}"/>
+		</i:EventTrigger>
+	</i:Interaction.Triggers>
+
+    <Grid x:Name="LayoutRoot" Margin="10,0,0,0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <TextBlock Grid.Row="0" VerticalAlignment="Top" Text="{Binding Information}" Foreground="#2E2E2E" FontFamily="Segoe UI" FontSize="32" Visibility="{Binding IsInformationVisible}" />
+        <ProgressBar Grid.Row="1" Visibility="{Binding IsProgressIndicatorVisible}" IsIndeterminate="true" Height="10" VerticalAlignment="Top" />
+        <phone:LongListSelector Grid.Row="2" VerticalAlignment="Top" ItemsSource="{Binding Cards}">
+            <phone:LongListSelector.ItemTemplate>
+                <DataTemplate>
+                    <Grid VerticalAlignment="Top" Margin="0,0,0,0">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <Rectangle Grid.RowSpan="2" Grid.Row="0" Grid.Column="0" Fill="#7fba00" HorizontalAlignment="Left" Height="100" Margin="0,0,10,0" VerticalAlignment="Top" Width="100"/>
+                        <TextBlock VerticalAlignment="Top" Grid.Row="0" Grid.Column="1" FontWeight="SemiBold" Text="{Binding Name}" Foreground="#FF686868" FontFamily="Segoe UI" FontSize="29.333" TextTrimming="WordEllipsis" />
+                        <TextBlock VerticalAlignment="Top" Height="70" Grid.Row="1" Grid.Column="1" Text="{Binding Description}" Foreground="#FF2E2E2E" FontFamily="Segoe UI" TextWrapping="Wrap" TextTrimming="WordEllipsis" />
+                    </Grid>
+                </DataTemplate>
+            </phone:LongListSelector.ItemTemplate>
+        </phone:LongListSelector>
     </Grid>
 </UserControl>

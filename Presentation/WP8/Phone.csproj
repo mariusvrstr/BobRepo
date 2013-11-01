@@ -93,8 +93,16 @@
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="BusinessLayer\Common\Constants.cs" />
+    <Compile Include="BusinessLayer\Common\ErrorHandler.cs" />
+    <Compile Include="BusinessLayer\Common\MessageDialog.cs" />
+    <Compile Include="BusinessLayer\Common\WebRequestCustom.cs" />
+    <Compile Include="BusinessLayer\Contracts\Gateway\ICardGateway.cs" />
+    <Compile Include="BusinessLayer\Contracts\Logic\IDepotLogic.cs" />
+    <Compile Include="BusinessLayer\Implementation\Gateway\CardGateway.cs" />
+    <Compile Include="BusinessLayer\Implementation\Logic\DepotLogic.cs" />
     <Compile Include="LocalizedStrings.cs" />
-    <Compile Include="ViewModel\ContainerService.cs" />
+    <Compile Include="BusinessLayer\Common\ContainerService.cs" />
     <Compile Include="ViewModel\DepotViewModel.cs" />
     <Compile Include="ViewModel\MainViewModel.cs" />
     <Compile Include="ViewModel\ProfileViewModel.cs" />
@@ -200,6 +208,7 @@
       <Name>ContractsPCL</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).$(TargetFrameworkVersion).Overrides.targets" />
   <Import Project="$(MSBuildExtensionsPath)\Microsoft\$(TargetFrameworkIdentifier)\$(TargetFrameworkVersion)\Microsoft.$(TargetFrameworkIdentifier).CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it.
