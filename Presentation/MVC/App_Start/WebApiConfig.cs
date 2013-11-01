@@ -1,6 +1,6 @@
 ﻿using System.Web.Http;
 
-namespace JBOB.App_Start
+namespace JBOB.Web.App_Start
 {
     public static class WebApiConfig
     {

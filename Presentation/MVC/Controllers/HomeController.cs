@@ -101,8 +101,20 @@ namespace JBOB.Controllers
         {
             var viewModel = new AboutViewModel
             {
-               // Users = userSetA,
-                Title = "First load"
+               Users = new List<User>
+               {
+                    new User
+                        {
+                            UserId = 2,
+                            Id = "christel123",
+                            Login = "Christel",
+                            Name = "Christel",
+                            Password = "christel123",
+                            Surname= "Jones"
+                        }
+
+               },
+               Title = "First load"
             };
             
             return View(viewModel);
