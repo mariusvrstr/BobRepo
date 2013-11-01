@@ -59,6 +59,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="API\CardTests.cs" />
     <Compile Include="API\UserTests.cs" />
     <Compile Include="DAL\UserTests.cs" />
     <Compile Include="Services\SerendityTest.cs" />

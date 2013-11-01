@@ -29,5 +29,20 @@ namespace JBOB
                 this.Cards.Remove(card);
             }
         }
+
+        public Card GetCardById(string Id)
+        {
+            var contextCard = Queryable.FirstOrDefault<Card>((from thisCard in this.Cards
+                                                              where thisCard.Id == Id
+                                                              select thisCard));
+
+            return contextCard;
+        }
+
+        public bool UpdateCard(Card card)
+        {
+            return true;
+
+        }
     }
 }

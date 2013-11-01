@@ -32,5 +32,22 @@ namespace Services.Services
 
             return mappedCards;
         }
+
+        public Card GetCardById(string id)
+        {
+            var context = DataContextFactory.CreateContext();
+            var card = context.CardRepository.GetCardById(id);
+
+            return card.Map();
+
+        }
+
+        public bool UpdateCard(Card card)
+        {
+            var context = DataContextFactory.CreateContext();
+            var result = context.CardRepository.UpdateCard(card.Map());
+
+            return result;
+        }
     }
 }

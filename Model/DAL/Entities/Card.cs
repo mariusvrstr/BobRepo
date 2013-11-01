@@ -18,5 +18,6 @@ namespace JBOB.Entities
         public CardCategoryEnum Category { get; set; }
         public IEnumerable<ActivityTypeEnum> ActivityOptions { get; set; }
         public int Weight { get; set; }
+       // public string MetaData { get; set; }
     }
 }

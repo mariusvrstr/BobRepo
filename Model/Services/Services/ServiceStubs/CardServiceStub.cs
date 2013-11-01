@@ -24,5 +24,16 @@
 
             return users;
         }
+
+        public Card GetCardById(string id)
+        {
+            var card = ObjectMother.Cards.Mandela.Map();
+            return card;
+        }
+
+        public bool UpdateCard(Card card)
+        {
+            return true;
+        }
     }
 }

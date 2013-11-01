@@ -10,5 +10,8 @@ namespace JBOB.Cards
     {
         Card AddCard(Card card);
         IEnumerable<Card> GetAllCards();
+        Card GetCardById(string id);
+        bool UpdateCard(Card card);
+
     }
 }
