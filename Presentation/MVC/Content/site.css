@@ -318,7 +318,7 @@ ul.navbar-nav {
                 #profBadge ul li div.bdgStar {
                     height: 30px;
                     width:100%;
-                    background-color:gold;
+                    background: url("images/starSprite.png") 0px 0px no-repeat;
 
                 }
    #cardSect section#profCreate  {
@@ -356,7 +356,7 @@ ul.navbar-nav {
    #bdgEight div#Eightbdg{
        background:url("images/SpriteBadges.png") 10px -535px no-repeat;
    }
-   
+ 
    #bdgTwo{}
    #bdgThree{}
    #bdgFour{}

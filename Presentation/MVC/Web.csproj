@@ -161,6 +161,7 @@
     <Content Include="Content\images\sort_desc.png" />
     <Content Include="Content\images\sort_desc_disabled.png" />
     <Content Include="Content\images\SpriteBadges.png" />
+    <Content Include="Content\images\starSprite.png" />
     <Content Include="Content\jquery.dataTables.css" />
     <Content Include="Content\site.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
