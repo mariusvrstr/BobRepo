@@ -106,7 +106,7 @@ namespace WP8.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to The Depot.
+        ///   Looks up a localized string similar to .
         /// </summary>
         public static string PanoramaItem0Title {
             get {
@@ -115,7 +115,7 @@ namespace WP8.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Scoreboard.
+        ///   Looks up a localized string similar to The Depot.
         /// </summary>
         public static string PanoramaItem1Title {
             get {
@@ -124,11 +124,20 @@ namespace WP8.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to My Profile.
+        ///   Looks up a localized string similar to Scoreboard.
         /// </summary>
         public static string PanoramaItem2Title {
             get {
                 return ResourceManager.GetString("PanoramaItem2Title", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to My Profile.
+        /// </summary>
+        public static string PanoramaItem3Title {
+            get {
+                return ResourceManager.GetString("PanoramaItem3Title", resourceCulture);
             }
         }
         

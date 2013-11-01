@@ -314,7 +314,6 @@ ul.navbar-nav {
             #profBadge ul li div {
                 height: 100px;
                 width: 100%;
-                background-color: pink;
             }
                 #profBadge ul li div.bdgStar {
                     height: 30px;
@@ -332,7 +331,36 @@ ul.navbar-nav {
    #cardSect h1 {
        font-weight: normal;
    }  
-
+   /*SpriteBadges*/
+   #bdgOne div#Onebdg{
+       background:url("images/SpriteBadges.png") 10px -15px no-repeat;
+   }
+   #bdgTwo div#Twobdg{
+       background:url("images/SpriteBadges.png") 10px -400px no-repeat;
+   }
+   #bdgThree div#Threebdg{
+       background:url("images/SpriteBadges.png") 10px -145px no-repeat;
+   }
+   #bdgFour div#Fourbdg{
+       background:url("images/SpriteBadges.png") 10px -215px no-repeat;
+   }
+   #bdgFive div#Fivebdg{
+       background:url("images/SpriteBadges.png") 10px -215px no-repeat;
+   }
+   #bdgSix div#Sixbdg{
+       background:url("images/SpriteBadges.png") 10px -275px no-repeat;
+   }
+   #bdgSeven div#Sevenbdg{
+       background:url("images/SpriteBadges.png") 10px -215px no-repeat;
+   }
+   #bdgEight div#Eightbdg{
+       background:url("images/SpriteBadges.png") 10px -215px no-repeat;
+   }
+   
+   #bdgTwo{}
+   #bdgThree{}
+   #bdgFour{}
+   
 /*****COLOURS*****/
 /*
     red #f25022;

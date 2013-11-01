@@ -132,13 +132,13 @@
     <value>Powered By Plexus</value>
   </data>
   <data name="PanoramaItem0Title" xml:space="preserve">
-    <value>The Depot</value>
+    <value />
   </data>
   <data name="PanoramaItem1Title" xml:space="preserve">
-    <value>Scoreboard</value>
+    <value>The Depot</value>
   </data>
   <data name="PanoramaItem2Title" xml:space="preserve">
-    <value>My Profile</value>
+    <value>Scoreboard</value>
   </data>
   <data name="ErrorDefaultMessage" xml:space="preserve">
     <value>An unexpected error occurred.</value>
@@ -151,5 +151,8 @@
   </data>
   <data name="Wrong" xml:space="preserve">
     <value>Something went wrong!</value>
+  </data>
+  <data name="PanoramaItem3Title" xml:space="preserve">
+    <value>My Profile</value>
   </data>
 </root>
