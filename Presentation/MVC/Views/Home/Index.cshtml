@@ -4,20 +4,22 @@
     Layout = "~/Views/Shared/_LayoutPage.cshtml";
 }
 
-@*@section PageContent {*@
+@* @section PageContent {*@
      
-<Section id="homeSect">
+    <Section id="homeSect">
 
-    @{Html.RenderPartial("_homePartial");}
-</Section>
-<Section id="profSect">   
-    @{Html.RenderPartial("_profilePartial");}
-</Section>
+        @{Html.RenderPartial("_homePartial");}
+    </Section>
+    <Section id="profSect">   
+        @{Html.RenderPartial("_profilePartial");}
+    </Section>
+    <section id="cardCreate">
+        @{Html.RenderPartial("_cardCreatePartial");}
+    </section> 
 
 
 
-
-@*}*@
+@*  } *@
 
 @section PageScripts {
      @Scripts.Render("/Scripts/Pages/home.js")

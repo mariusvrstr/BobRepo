@@ -322,6 +322,10 @@ ul.navbar-nav {
                     background-color:gold;
 
                 }
+    #cardCreate {
+        width: auto;
+        float: left;
+    }            
 /*****COLOURS*****/
 /*
     red #f25022;
