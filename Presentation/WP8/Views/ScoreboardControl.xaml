@@ -8,8 +8,8 @@
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
     DataContext="{Binding Source={StaticResource ViewModelLocator}, Path=ScoreboardViewModel}">
-    
-    <Grid x:Name="LayoutRoot">
-        <TextBlock Text="Scoreboard Control" />
+
+    <Grid x:Name="LayoutRoot" Margin="10,0,0,0">
+        
     </Grid>
 </UserControl>

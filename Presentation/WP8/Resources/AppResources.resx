@@ -146,4 +146,10 @@
   <data name="ErrorDefaultTitle" xml:space="preserve">
     <value>Error</value>
   </data>
+  <data name="Loading" xml:space="preserve">
+    <value>Loading...</value>
+  </data>
+  <data name="Wrong" xml:space="preserve">
+    <value>Something went wrong!</value>
+  </data>
 </root>
