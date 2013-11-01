@@ -10,6 +10,29 @@
     DataContext="{Binding Source={StaticResource ViewModelLocator}, Path=ProfileViewModel}">
     
     <Grid x:Name="LayoutRoot">
-        <TextBlock Text="Profile Control" />
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Image VerticalAlignment="Top" Grid.Row="0" Grid.Column="0" Grid.RowSpan="8" Source="/WP8;component/Assets/Profile.jpg" Stretch="Fill" Width="134" Height="200" Margin="0,0,12,0"/>
+        <TextBlock Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="8" Text="Name" FontFamily="Segoe UI" FontSize="29.333" Foreground="#FF686868" />
+        <TextBlock Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="8" Text="Scott Parker" Margin="0,0,0,24" FontFamily="Segoe UI" Foreground="#FF2E2E2E" />
+        <TextBlock Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="8" Text="Birthday" FontFamily="Segoe UI" FontSize="29.333" Foreground="#FF686868" />
+        <TextBlock Grid.Row="3" Grid.Column="1" Grid.ColumnSpan="8" Text="23 January 1983" Margin="0,0,0,24" FontFamily="Segoe UI" Foreground="#FF2E2E2E" />
+        <TextBlock Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="8" Text="Email" FontFamily="Segoe UI" FontSize="29.333" Foreground="#FF686868" />
+        <TextBlock Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="8" Text="scott.parker@britehouse.co.za" Margin="0,0,0,24" FontFamily="Segoe UI" Foreground="#FF2E2E2E" />
+        <TextBlock  Grid.Row="6" Grid.Column="1" Grid.ColumnSpan="8" Text="Department" FontFamily="Segoe UI" FontSize="29.333" Foreground="#FF686868" />
+        <TextBlock  Grid.Row="7" Grid.Column="1" Grid.ColumnSpan="8" Text="Sales" FontFamily="Segoe UI" Foreground="#FF2E2E2E" />
     </Grid>
 </UserControl>

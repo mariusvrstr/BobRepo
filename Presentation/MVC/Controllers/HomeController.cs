@@ -3,6 +3,7 @@ using JBOB.Models;
 using System.Collections.Generic;
 using System.Web.Mvc;
 using JBOB.Users;
+using JBOB.Web.HtmlHelpers;
 
 namespace JBOB.Controllers
 {
@@ -101,19 +102,7 @@ namespace JBOB.Controllers
         {
             var viewModel = new AboutViewModel
             {
-               Users = new List<User>
-               {
-                    new User
-                        {
-                            UserId = 2,
-                            Id = "christel123",
-                            Login = "Christel",
-                            Name = "Christel",
-                            Password = "christel123",
-                            Surname= "Jones"
-                        }
-
-               },
+                Users = JsonApiConsumer.GetItems(new User(), JsonApiConsumer.UserGetAll),
                Title = "First load"
             };
             
