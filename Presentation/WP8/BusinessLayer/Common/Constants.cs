@@ -9,5 +9,6 @@ namespace WP8.BusinessLayer.Common
     public class Constants
     {
         public const string SERVICES_URI = "http://localhost:1079/";
+        public const int SERVICES_TIMEOUT = 60;
     }
 }

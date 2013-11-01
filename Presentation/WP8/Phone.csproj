@@ -94,6 +94,8 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="BusinessLayer\Common\Constants.cs" />
+    <Compile Include="BusinessLayer\Common\ErrorHandler.cs" />
+    <Compile Include="BusinessLayer\Common\MessageDialog.cs" />
     <Compile Include="BusinessLayer\Contracts\Gateway\ICardGateway.cs" />
     <Compile Include="BusinessLayer\Contracts\Logic\IDepotLogic.cs" />
     <Compile Include="BusinessLayer\Implementation\Gateway\CardGateway.cs" />
