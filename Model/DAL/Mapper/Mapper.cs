@@ -45,7 +45,47 @@
             return mapped;
         }
 
+        public static JBOB.Cards.Card Map(this JBOB.Entities.Card original)
+        {
+            if (original == null)
+            {
+                return null;
+            }
 
+            var mapped = new JBOB.Cards.Card
+            {
+                CardId = original.CardId,
+                Id = original.Id,
+                Name = original.Name,
+                Description = original.Description,
+                Category = original.Category,
+                ActivityOptions = original.ActivityOptions,
+                Weight = original.Weight
+            };
+
+            return mapped;
+        }
+
+        public static JBOB.Entities.Card Map(this JBOB.Cards.Card original)
+        {
+            if (original == null)
+            {
+                return null;
+            }
+
+            var mapped = new JBOB.Entities.Card
+            {
+                CardId = original.CardId,
+                Id = original.Id,
+                Name = original.Name,
+                Description = original.Description,
+                Category = original.Category,
+                ActivityOptions = original.ActivityOptions,
+                Weight = original.Weight
+            };
+
+            return mapped;
+        }
 
     }
 }

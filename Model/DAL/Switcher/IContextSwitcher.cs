@@ -6,5 +6,6 @@ namespace JBOB.Switcher
     public interface IContextSwitcher : IGlobalContext
     {
         IUserRepository UserRepository { get; }
+        ICardRepository CardRepository { get; }
     }
 }

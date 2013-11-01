@@ -17,6 +17,13 @@ namespace JBOB
             }
         }
 
+        public ICardRepository CardRepository
+        {
+            get
+            {
+                return this as ICardRepository;
+            }
+        }
 
     }
 }

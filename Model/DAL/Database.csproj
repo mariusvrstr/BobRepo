@@ -55,6 +55,8 @@
     <Compile Include="Entities\Organization.cs" />
     <Compile Include="Entities\Profile.cs" />
     <Compile Include="Mapper\Mapper.cs" />
+    <Compile Include="Repositories\CardRepository.cs" />
+    <Compile Include="Repositories\ICardRepository.cs" />
     <Compile Include="Switcher\ContextSwitcher.cs" />
     <Compile Include="DataContext.cs" />
     <Compile Include="Entities\User.cs" />
