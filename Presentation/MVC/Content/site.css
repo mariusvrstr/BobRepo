@@ -214,21 +214,21 @@ ul.navbar-nav {
         #profSect section.profContact {
             width:300px;
         }
-        #profSect section h1 , #cardSect section#cardCreate section h1{
+        #profSect section h1 , #cardSect section#profCreate h1{
             font-family:'Segoe UI';
         }
-        #profSect section.profDetails > ul ,  #profSect section#profScore > ul , #cardSect section#cardCreate > ul {
+        #profSect section.profDetails > ul ,  #profSect section#profScore > ul , #cardSect section#profCreate > ul {
             padding: 0px;
             margin: 0px;
         }
-        #profSect section.profDetails > ul > li ,  #profSect section#profScore > ul > li , #cardSect section#cardCreate > ul > li{
+        #profSect section.profDetails > ul > li ,  #profSect section#profScore > ul > li , #cardSect section#profCreate > ul > li{
            list-style-type:none;
            line-height:30px;
            margin-bottom:5px;
            width:100%;
            float:left;
         }
-            #profSect section.profDetails > ul > li label , section#cardCreate ul > li label {
+            #profSect section.profDetails > ul > li label , section#profCreate ul > li label {
                 display: block;
                 font-weight:normal;
                 font-size:16px;
@@ -238,10 +238,10 @@ ul.navbar-nav {
                 Width:190px;
                 float:left;
             }
-        #profSect section#company .btn-group , #cardSect section#cardCreate .btn-group {
+        #profSect section#company .btn-group , #cardSect section#profCreate .btn-group {
             width:100%;
         }
-        #profSect section#company .btn-group button , #cardSect section#cardCreate .btn-group button{
+        #profSect section#company .btn-group button , #cardSect section#profCreate .btn-group button{
             width:80%;
             text-align:right;
         }
@@ -322,13 +322,16 @@ ul.navbar-nav {
                     background-color:gold;
 
                 }
-   #cardSect section#cardCreate  {
+   #cardSect section#profCreate  {
         float:left;
         max-width:400px;
         width:auto;
         height:500px;
         margin-left:50px;
-    }    
+    }  
+   #cardSect h1 {
+       font-weight: normal;
+   }  
 
 /*****COLOURS*****/
 /*
