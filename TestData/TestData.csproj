@@ -56,9 +56,9 @@
     <Compile Include="Wado.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Contracts\Contracts.csproj">
-      <Project>{80b5b285-8135-4c33-8217-f48d491cf4a9}</Project>
-      <Name>Contracts</Name>
+    <ProjectReference Include="..\ContractsPCL\ContractsPCL.csproj">
+      <Project>{385c9a3f-3adf-4863-911b-49f09fc6f64c}</Project>
+      <Name>ContractsPCL</Name>
     </ProjectReference>
     <ProjectReference Include="..\Model\DAL\Database.csproj">
       <Project>{dcde14f5-8ff6-434f-871d-70ecf3ef5be8}</Project>
