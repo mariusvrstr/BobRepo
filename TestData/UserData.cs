@@ -26,6 +26,15 @@ namespace JBOB.TestData
 
                 context.SaveChanges();
             }
+
+            public static void Clear()
+            {
+                var context = DataContextFactory.CreateContext();
+
+                context.UserRepository.DeleteAllUsers();
+
+                context.SaveChanges();
+            }
         }
     }
 }
