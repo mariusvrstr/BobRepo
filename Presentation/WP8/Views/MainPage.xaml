@@ -54,16 +54,49 @@
 
             <!--Panorama item one-->
             <phone:PanoramaItem Header="{Binding Path=LocalizedResources.PanoramaItem0Title, Source={StaticResource LocalizedStrings}}">
-                <views:DepotControl />    
+                <Grid>
+            	<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" Foreground="#FF2E2E2E">
+            		<Span>
+            			<Run Text="Making ordinary people,"/>
+            		</Span>
+            		<LineBreak/>
+            		<Span>
+            			<Run Text="Everyday Heroes"/>
+            		</Span>
+            		<LineBreak/>
+            		<Run Text=""/>
+            	</TextBlock>
+            	<Path Data="M18,293 L393.3,293" Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="1" Margin="1.7,202,0,0" Stretch="Fill" Stroke="Black" UseLayoutRounding="False" VerticalAlignment="Top" />
+            	<TextBlock HorizontalAlignment="Left" Margin="-2,213,0,0" TextWrapping="Wrap" VerticalAlignment="Top">
+            		<Span Foreground="Black" FontStyle="Italic">
+            			<Run Text="corporate social investment"/>
+            		</Span>
+            		<Run Foreground="Black" Text=" has a pivotal role to play"/>
+            		<Run Foreground="Black" Text=" "/>
+            		<Run Foreground="Black" Text="in bringing about meaningful"/>
+            		<Run Foreground="Black" Text=" "/>
+            		<Run Foreground="Black" Text="transformation to the "/>
+            		<Span Foreground="Black" FontFamily="Calibri">
+            			<Run Text="benefit of all. "/>
+            		</Span>
+            		<LineBreak/>
+            		<Run Text=""/>
+            	</TextBlock>
+                </Grid>
             </phone:PanoramaItem>
 
             <!--Panorama item two-->
-            <phone:PanoramaItem  Header="{Binding Path=LocalizedResources.PanoramaItem1Title, Source={StaticResource LocalizedStrings}}">
-                <views:ScoreboardControl />    
+            <phone:PanoramaItem Header="{Binding Path=LocalizedResources.PanoramaItem1Title, Source={StaticResource LocalizedStrings}}">
+                <views:DepotControl />    
             </phone:PanoramaItem>
 
             <!--Panorama item three-->
-            <phone:PanoramaItem Header="{Binding Path=LocalizedResources.PanoramaItem2Title, Source={StaticResource LocalizedStrings}}">
+            <phone:PanoramaItem  Header="{Binding Path=LocalizedResources.PanoramaItem2Title, Source={StaticResource LocalizedStrings}}">
+                <views:ScoreboardControl />    
+            </phone:PanoramaItem>
+
+            <!--Panorama item four-->
+            <phone:PanoramaItem Header="{Binding Path=LocalizedResources.PanoramaItem3Title, Source={StaticResource LocalizedStrings}}">
                 <views:ProfileControl />    
             </phone:PanoramaItem>
         </phone:Panorama>
