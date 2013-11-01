@@ -4,8 +4,16 @@
     {
         public static void Initialize()
         {
+            Clear();
+
             Users.Initialize();
             Cards.Initialize();
+        }
+
+        public static void Clear()
+        {
+            // Cards.Clear();
+            Users.Clear();
         }
     }
 }

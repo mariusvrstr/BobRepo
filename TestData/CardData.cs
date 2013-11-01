@@ -24,6 +24,15 @@ namespace JBOB.TestData
 
                 context.SaveChanges();
             }
+
+            public static void Clear()
+            {
+                var context = DataContextFactory.CreateContext();
+
+                context.CardRepository.DeleteAllCards();
+
+                context.SaveChanges();
+            }
         }
     }
 }
