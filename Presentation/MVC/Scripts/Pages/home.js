@@ -61,6 +61,8 @@ $.JBOB.page.dataAccess = function () {
         dataAccess.GetCreatedCard();
 
     };
+    
+    $("#hide").toggleClass('viewCard');
 
     dataAccess.createCard = function () {
         

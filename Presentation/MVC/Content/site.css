@@ -422,6 +422,9 @@ ul.navbar-nav {
        padding-left: 10px;
        display: block;
    }
+   #hide{
+       display:none;
+   }
    #cardSect section#viewCard { margin-top: 30px;}
     #cardSect section#viewCard ul li.widFloat {
         width: 250px;
