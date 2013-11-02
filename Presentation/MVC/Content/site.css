@@ -219,6 +219,10 @@ ul.navbar-nav {
             padding: 0px;
             margin: 0px;
         }
+        #cardSect section#profCreate > ul {
+            width: 90%;
+        }
+
         #profSect section.profDetails > ul > li ,  #profSect section#profScore > ul > li {
            list-style-type:none;
            line-height:30px;
@@ -301,13 +305,15 @@ ul.navbar-nav {
     #profBadge ul {
         margin: 0px;
         padding: 0px;
+        width: 380px;
     }
         #profBadge ul li {
             list-style-type: none;
             display: inline-block;
             float: left;
             width: 50%;
-            padding:2%;
+            padding:1%;
+            margin: 0px;
         }
             #profBadge ul li div {
                 height: 120px;
@@ -319,7 +325,28 @@ ul.navbar-nav {
                     background: url("images/starSprite.png") 0px 0px no-repeat;
 
                 }
-   #cardSect section#profCreate  {
+                #profBadge ul li#bdgTwo div.bdgStar {
+                    background: url("images/starSprite.png") 0px -35px no-repeat;
+                }
+                #profBadge ul #bdgThree .bdgStar {
+                    background: url("images/starSprite.png") 0px -103px no-repeat;
+                }
+                #profBadge ul #bdgFour .bdgStar {
+                    background: url("images/starSprite.png") 0px -103px no-repeat;
+                }
+                 #profBadge ul #bdgFive .bdgStar {
+                    background: url("images/starSprite.png") 0px -103px no-repeat;
+                }
+                  #profBadge ul #bdgSix .bdgStar {
+                    background: url("images/starSprite.png") 0px -67px no-repeat;
+                }
+                   #profBadge ul #bdgSeven .bdgStar {
+                    background: url("images/starSprite.png") 0px -103px no-repeat;
+                }
+                    #profBadge ul #bdgEight .bdgStar {
+                    background: url("images/starSprite.png") 0px -103px no-repeat;
+                }
+   #cardSect section#profCreate , #cardSect section#viewCard  {
         float:left;
         max-width:450px;
         width:auto;
@@ -346,7 +373,6 @@ ul.navbar-nav {
        height: 100px;
        width: 100px;
        color: #fff;
-       
        font-size: 16px;
    }
    #cardSect section#profCreate > ul > li#bigButtons ul > li  div label {
@@ -384,10 +410,44 @@ ul.navbar-nav {
        background:url("images/SpriteBadges.png") 10px -535px no-repeat;
    }
  
-   #bdgTwo{}
-   #bdgThree{}
-   #bdgFour{}
-   
+   .coolBorder {
+       border-left: 3px solid #01a4ef;
+       padding-left: 10px;
+       display: block;
+   }
+   #cardSect section#viewCard { margin-top: 30px;}
+    #cardSect section#viewCard ul li.widFloat {
+        width: 250px;
+        float: left;
+    }
+   #cardSect section#viewCard h2 {
+       font-family: "Segoe UI";
+   }
+  
+   #cardSect section#viewCard img {
+       height: 100px;
+       width: 100px;
+       float: left;
+   }
+   #cardSect section#viewCard ul {
+       margin: 0px;
+       padding: 0px;
+       display: block;
+   }
+   #cardSect section#viewCard ul li {
+       list-style-type: none;
+       display: inline-block;
+       padding: 0px;
+       margin: 0px;
+       width: 100%;
+   }
+    #cardSect section#viewCard ul#xtra li {
+        width: 30%;
+        float: left;
+    }
+    #cardSect section#viewCard ul#xtra li.widFloat {
+        width: 70%;
+    }
 /*****COLOURS*****/
 /*
     red #f25022;
