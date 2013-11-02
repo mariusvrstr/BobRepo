@@ -1,9 +1,7 @@
 body {
-    padding-top:10px;
- font-family:'Segoe UI';
- width:6000px;
- 
-
+    padding-top: 10px;
+    font-family: 'Segoe UI';
+    width: 6000px;
 }
 .horizontalContainer {
     width:auto;
@@ -14,8 +12,8 @@ body {
      overflow-x:scroll;
      overflow-y:hidden;
     min-height:768px;
-
 }
+.smallTitle{}
 .main-content {
   padding: 40px 15px;
   text-align: center;
@@ -331,6 +329,9 @@ ul.navbar-nav {
    #cardSect h1 {
        font-weight: normal;
    }
+   #cardSect section#profCreate > ul  , #cardSect section#profCreate > ul > li {
+       width: 100%;
+   }
    #cardSect section#profCreate > ul  , #cardSect section#profCreate > ul > li#bigButtons ul {
        margin: 0px;
        padding: 0px;
@@ -342,16 +343,20 @@ ul.navbar-nav {
     display: inline-block;
 }
    #cardSect section#profCreate > ul > li#bigButtons ul > li  div {
-       height: 120px;
-       width: 120px;
+       height: 100px;
+       width: 100px;
        color: #fff;
+       
        font-size: 16px;
    }
    #cardSect section#profCreate > ul > li#bigButtons ul > li  div label {
        background-color: Transparent;
-       line-height: 120px;
-       font-size: 40px;
+       line-height: 100px;
+       font-size: 34px;
        text-align: center
+   }
+  #profCreate button {
+       float: right;
    }
    /*SpriteBadges*/
    #bdgOne div#Onebdg{
