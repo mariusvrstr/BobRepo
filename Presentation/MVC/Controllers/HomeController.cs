@@ -4,6 +4,7 @@ using JBOB.Cards;
 using JBOB.Models;
 using System.Collections.Generic;
 using System.Web.Mvc;
+using JBOB.TestData;
 using JBOB.Users;
 using JBOB.Web.HtmlHelpers;
 using Services.Interaction;
@@ -52,6 +53,13 @@ namespace JBOB.Controllers
             var services = ServiceFactory.CreateCardService();
             var card=services.GetCardById(Id);
             return card;
+        }
+
+        public string InitData()
+        {
+            ObjectMother.Initialize();
+
+            return "Object Mother Initialized";
         }
 
         public void AddCard(Card card)
