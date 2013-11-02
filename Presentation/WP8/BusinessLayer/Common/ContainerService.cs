@@ -20,6 +20,7 @@ public static class ContainerService
         kernel.Bind<DepotViewModel>().ToSelf();
         kernel.Bind<ScoreboardViewModel>().ToSelf();
         kernel.Bind<ProfileViewModel>().ToSelf();
+        kernel.Bind<ViewCardViewModel>().ToSelf();
     }
 
     public static T Get<T>()

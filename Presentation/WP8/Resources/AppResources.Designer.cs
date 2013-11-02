@@ -79,6 +79,24 @@ namespace WP8.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to  points.
+        /// </summary>
+        public static string CardViewPointsString {
+            get {
+                return ResourceManager.GetString("CardViewPointsString", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Card View.
+        /// </summary>
+        public static string CardViewTitle {
+            get {
+                return ResourceManager.GetString("CardViewTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to An unexpected error occurred..
         /// </summary>
         public static string ErrorDefaultMessage {
