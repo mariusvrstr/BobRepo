@@ -458,6 +458,18 @@ ul.navbar-nav {
     #cardSect section.viewCard ul#xtra li.widFloat {
         width: 70%;
     }
+
+    .selectedItem {
+        background-color: #FFFFFF;
+        border: 1px solid #2e2e2e;
+    }
+
+    .selectedItem label {
+          color: #2e2e2e;
+     } 
+
+
+
 /*****COLOURS*****/
 /*
     red #f25022;

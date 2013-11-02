@@ -25,7 +25,7 @@ $.JBOB.page.ux = function () {
     };
 
     ux.scrollProfile = function() {
-        var pos = $('#personal').position();
+        var pos = $('#profImg').position();
         $('html, body').stop().animate({ scrollLeft: pos.left + 'px' }, 1000, 'easeOutQuint');
     };
     ux.scrollScore = function() {
@@ -57,7 +57,6 @@ $.JBOB.page.dataAccess = function () {
     var dataAccess = {};
 
     var onAddCardComplete = function() {
-        console.log('Success');
                 
         if ($('#cardDetail').hasClass('hide')) {
             $('#cardDetail').removeClass('hide');

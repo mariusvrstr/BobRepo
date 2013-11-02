@@ -1,12 +1,22 @@
 ﻿<section id="profCreate">
+   
+    <script>
+
+        function selectMe(elem) {
+            $(elem).addClass('selectedItem');
+        }
+
+    </script>
+    
+    
     <h1>Create a card</h1> 
     <ul >
         <li id="bigButtons">
             <div class="form-group">
                 <ul >
-                    <li><a href="#"><div class="red block"><label>#DO</label></div></a></li>
-                    <li><a href="#"><div class="green block"><label>#WILL</label></div></a></li>
-                    <li><a href="#"><div class="blue block"><label>#GIVE</label></div></a></li>
+                    <li><a href="#"><div class="red block" onclick="selectMe(this);"><label>#DO</label></div></a></li>
+                    <li><a href="#"><div class="green block" onclick="selectMe(this);"><label>#WILL</label></div></a></li>
+                    <li><a href="#"><div class="blue block" onclick="selectMe(this);"><label>#GIVE</label></div></a></li>
                 </ul>
                 </div>
             
