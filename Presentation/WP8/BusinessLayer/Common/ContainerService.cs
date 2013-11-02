@@ -11,8 +11,10 @@ public static class ContainerService
 
     public static void Initialize()
     {
+        kernel.Bind<ILiveTileGateway>().To<LiveTileGateway>();
         kernel.Bind<ICardGateway>().To<CardGateway>();
         kernel.Bind<IDepotLogic>().To<DepotLogic>();
+        kernel.Bind<IGameLogic>().To<GameLogic>();
 
         kernel.Bind<MainViewModel>().ToSelf().InSingletonScope();
         kernel.Bind<DepotViewModel>().ToSelf();

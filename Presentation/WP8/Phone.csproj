@@ -107,9 +107,13 @@
     <Compile Include="BusinessLayer\Contracts\DSL\Users\User.cs" />
     <Compile Include="BusinessLayer\Contracts\DSL\Users\UserRoleEnum.cs" />
     <Compile Include="BusinessLayer\Contracts\Gateway\ICardGateway.cs" />
+    <Compile Include="BusinessLayer\Contracts\Gateway\ILiveTileGateway.cs" />
     <Compile Include="BusinessLayer\Contracts\Logic\IDepotLogic.cs" />
+    <Compile Include="BusinessLayer\Contracts\Logic\IGameLogic.cs" />
     <Compile Include="BusinessLayer\Implementation\Gateway\CardGateway.cs" />
+    <Compile Include="BusinessLayer\Implementation\Gateway\LiveTileGateway.cs" />
     <Compile Include="BusinessLayer\Implementation\Logic\DepotLogic.cs" />
+    <Compile Include="BusinessLayer\Implementation\Logic\GameLogic.cs" />
     <Compile Include="LocalizedStrings.cs" />
     <Compile Include="BusinessLayer\Common\ContainerService.cs" />
     <Compile Include="ViewModel\DepotViewModel.cs" />
@@ -179,12 +183,6 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Assets\Tiles\FlipCycleTileSmall.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Assets\Tiles\IconicTileMediumLarge.png">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Assets\Tiles\IconicTileSmall.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
