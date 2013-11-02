@@ -4,5 +4,6 @@ namespace WP8.ViewModel
 {
     public class ProfileViewModel : ViewModelBase
     {
+        
     }
 }

@@ -2,7 +2,9 @@
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
-    DataContext="{Binding DepotViewModel, Source={StaticResource ViewModelLocator}}" mc:Ignorable="d">
+    DataContext="{Binding DepotViewModel, Source={StaticResource ViewModelLocator}}" 
+    xmlns:Common="clr-namespace:WP8.BusinessLayer.Common.Controls;assembly=WP8"
+    mc:Ignorable="d">
 
 	<i:Interaction.Triggers>
 		<i:EventTrigger EventName="Loaded">
@@ -18,8 +20,8 @@
         </Grid.RowDefinitions>
         <TextBlock Grid.Row="0" VerticalAlignment="Top" Text="{Binding Information}" Foreground="#2E2E2E" FontFamily="Segoe UI" FontSize="32" Visibility="{Binding IsInformationVisible}" />
         <ProgressBar Grid.Row="1" Visibility="{Binding IsProgressIndicatorVisible}" IsIndeterminate="true" Height="10" VerticalAlignment="Top" />
-        <phone:LongListSelector Grid.Row="2" VerticalAlignment="Top" ItemsSource="{Binding Cards}">
-            <phone:LongListSelector.ItemTemplate>
+        <Common:LongListSelector Grid.Row="2" VerticalAlignment="Top" ItemsSource="{Binding Cards}" SelectedItem="{Binding SelectedCard, Mode=TwoWay}">
+            <Common:LongListSelector.ItemTemplate>
                 <DataTemplate>
                     <Grid VerticalAlignment="Top" Margin="0,0,0,0">
                         <Grid.RowDefinitions>
@@ -35,7 +37,7 @@
                         <TextBlock VerticalAlignment="Top" Height="70" Grid.Row="1" Grid.Column="1" Text="{Binding Description}" Foreground="#FF2E2E2E" FontFamily="Segoe UI" TextWrapping="Wrap" TextTrimming="WordEllipsis" />
                     </Grid>
                 </DataTemplate>
-            </phone:LongListSelector.ItemTemplate>
-        </phone:LongListSelector>
+            </Common:LongListSelector.ItemTemplate>
+        </Common:LongListSelector>
     </Grid>
 </UserControl>

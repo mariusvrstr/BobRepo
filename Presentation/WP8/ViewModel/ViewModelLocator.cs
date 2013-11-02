@@ -37,6 +37,14 @@ namespace WP8.ViewModel
                 return ContainerService.Get<ScoreboardViewModel>();
             }
         }
+
+        public ViewCardViewModel ViewCardViewModel
+        {
+            get
+            {
+                return ContainerService.Get<ViewCardViewModel>();
+            }
+        }
         
         public static void Cleanup()
         {

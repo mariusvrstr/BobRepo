@@ -171,4 +171,10 @@ Points: 359</value>
   <data name="LiveTileExampleTitle" xml:space="preserve">
     <value>Plexus</value>
   </data>
+  <data name="CardViewTitle" xml:space="preserve">
+    <value>Card View</value>
+  </data>
+  <data name="CardViewPointsString" xml:space="preserve">
+    <value> points</value>
+  </data>
 </root>
