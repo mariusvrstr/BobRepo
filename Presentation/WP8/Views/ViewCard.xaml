@@ -55,8 +55,8 @@
                 <shell:ApplicationBarMenuItem Text="help" />
                 <shell:ApplicationBarMenuItem Text="feedback..." />
             </shell:ApplicationBar.MenuItems>
-            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/check.png" Text="add to deck" />
-            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/share.png" Text="share"/>
+            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/check.png" Text="add to deck" Click="ApplicationBarCheckButton_Click" />
+            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/share.png" Text="share" Click="ApplicationBarShareButton_Click"/>
         </shell:ApplicationBar>
     </phone:PhoneApplicationPage.ApplicationBar>
 </phone:PhoneApplicationPage>
