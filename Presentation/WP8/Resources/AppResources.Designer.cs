@@ -124,9 +124,9 @@ namespace WP8.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ranking: 215
-        ///Badges: 3/20
-        ///Points: 359.
+        ///   Looks up a localized string similar to Ranking: 213/215
+        ///Badges: 1/23
+        ///Points: 120.
         /// </summary>
         public static string LiveTileExampleLargeTileContent {
             get {
@@ -135,9 +135,9 @@ namespace WP8.Resources {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Ranking: 215
-        ///Badges: 3/20
-        ///Points: 359.
+        ///   Looks up a localized string similar to Ranking: 213/215
+        ///Badges: 1/23
+        ///Points: 120.
         /// </summary>
         public static string LiveTileExampleMediumTileContent {
             get {
