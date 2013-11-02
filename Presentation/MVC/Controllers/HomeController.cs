@@ -136,5 +136,12 @@ namespace JBOB.Controllers
 
             return this.PartialView("_aboutPartial", title);
         }
+		
+		public Card Get(string Id)
+        {
+          
+            
+             return null;
+        }
     }
 }

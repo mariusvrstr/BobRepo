@@ -7,6 +7,7 @@ using JBOB.Serendipty;
 using JBOB.Users;
 using JBOB.Services;
 using Services.ServiceStubs;
+using JBOB.Services.Services;
 
 namespace Services.Interaction
 {
@@ -37,7 +38,7 @@ namespace Services.Interaction
             }
             else
             {
-                return new CardServiceStub();
+                return new CardService();
             }
         }
 
