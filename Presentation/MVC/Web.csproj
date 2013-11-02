@@ -128,15 +128,21 @@
   <ItemGroup>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="Common\ViewModelBase.cs" />
+    <Compile Include="Controllers\CardController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MyProfileController.cs" />
+    <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="HtmlHelpers\JsonApiConsumer.cs" />
     <Compile Include="HtmlHelpers\LinkHelper.cs" />
+    <Compile Include="Interaction\ServiceFactory.cs" />
     <Compile Include="Models\AboutViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\CardService.cs" />
+    <Compile Include="Services\SerendiptyMeta.cs" />
+    <Compile Include="Services\UserService.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\FilterConfig.cs" />
@@ -217,6 +223,10 @@
     <Content Include="Views\Shared\_menu.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\Model\DAL\Database.csproj">
+      <Project>{dcde14f5-8ff6-434f-871d-70ecf3ef5be8}</Project>
+      <Name>Database</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\TestData\TestData.csproj">
       <Project>{61a7a4b2-b3b6-4905-9c05-ba0ef9c2b88e}</Project>
       <Name>TestData</Name>

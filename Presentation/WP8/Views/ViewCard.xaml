@@ -1,0 +1,51 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="WP8.Views.ViewCard"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True"
+    DataContext="{Binding Source={StaticResource ViewModelLocator}, Path=ViewCardViewModel}">
+
+    <!--LayoutRoot is the root grid where all page content is placed-->
+    <Grid x:Name="LayoutRoot" Background="#fff">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel contains the name of the application and page title-->
+        <StackPanel Grid.Row="0" Margin="12,17,0,28">
+            <TextBlock Text="{Binding Path=LocalizedResources.CardViewTitle, Source={StaticResource LocalizedStrings}}" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}" Foreground="#FF2E2E2E" FontFamily="Segoe UI" />
+        </StackPanel>
+
+        <!--ContentPanel - place additional content here-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Rectangle Grid.Row="0" Grid.Column="0" Fill="#7fba00" HorizontalAlignment="Left" Height="150" Margin="0,0,12,12" VerticalAlignment="Top" Width="150"/>
+            <StackPanel Grid.Row="0" Grid.Column="1" Margin="0,0,12,0">
+                <TextBlock TextAlignment="Right" Text="{Binding Card.Name}" Foreground="#FF686868" FontFamily="Segoe UI" FontSize="36" TextWrapping="Wrap" />
+                <TextBlock TextAlignment="Right" Foreground="#FF2E2E2E" FontFamily="Segoe UI" FontSize="24">
+                    <Run Text="{Binding Card.Weight}"/>
+                    <Run Text="{Binding Path=LocalizedResources.CardViewPointsString, Source={StaticResource LocalizedStrings}}" />
+                </TextBlock>
+            </StackPanel>
+            <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding Card.Description}" TextWrapping="Wrap" Foreground="#FF2E2E2E" FontFamily="Segoe UI" FontSize="24" />
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

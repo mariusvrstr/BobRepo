@@ -2,7 +2,6 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using JBOB.Serendipty;
 using Services.Interaction;
-using JBOB.Services;
 
 namespace SerendiptyTestProject
 {
