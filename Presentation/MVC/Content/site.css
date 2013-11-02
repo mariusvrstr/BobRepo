@@ -221,7 +221,7 @@ ul.navbar-nav {
             padding: 0px;
             margin: 0px;
         }
-        #profSect section.profDetails > ul > li ,  #profSect section#profScore > ul > li , #cardSect section#profCreate > ul > li{
+        #profSect section.profDetails > ul > li ,  #profSect section#profScore > ul > li {
            list-style-type:none;
            line-height:30px;
            margin-bottom:5px;
@@ -323,14 +323,36 @@ ul.navbar-nav {
                 }
    #cardSect section#profCreate  {
         float:left;
-        max-width:400px;
+        max-width:450px;
         width:auto;
         height:500px;
         margin-left:50px;
     }  
    #cardSect h1 {
        font-weight: normal;
-   }  
+   }
+   #cardSect section#profCreate > ul  , #cardSect section#profCreate > ul > li#bigButtons ul {
+       margin: 0px;
+       padding: 0px;
+   }
+#cardSect section#profCreate > ul > li , #cardSect section#profCreate > ul > li#bigButtons ul > li  {
+    list-style-type: none;
+    padding:0px;
+    margin:0px;
+    display: inline-block;
+}
+   #cardSect section#profCreate > ul > li#bigButtons ul > li  div {
+       height: 120px;
+       width: 120px;
+       color: #fff;
+       font-size: 16px;
+   }
+   #cardSect section#profCreate > ul > li#bigButtons ul > li  div label {
+       background-color: Transparent;
+       line-height: 120px;
+       font-size: 40px;
+       text-align: center
+   }
    /*SpriteBadges*/
    #bdgOne div#Onebdg{
        background:url("images/SpriteBadges.png") 10px -15px no-repeat;
