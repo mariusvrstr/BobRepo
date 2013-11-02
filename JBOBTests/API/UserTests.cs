@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using JBOB.TestData;
 using JBOB.Users;
+using JBOB.Controllers;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Services.Controllers;
 using TestData;
 
 namespace JBOBTests.API

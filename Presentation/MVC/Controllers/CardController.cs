@@ -1,14 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using System.Collections.Generic;
 using System.Web.Http;
-using System.Web.Mvc;
 using JBOB.Cards;
-using JBOB.Mapper;
 using Services.Interaction;
 
-namespace Services.Controllers
+namespace JBOB.Controllers
 {
     public class CardController : ApiController
     {

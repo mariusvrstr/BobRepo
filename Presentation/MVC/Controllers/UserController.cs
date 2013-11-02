@@ -1,10 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Web.Http;
-using System.Web.Mvc;
 using JBOB.Users;
 using Services.Interaction;
 
-namespace Services.Controllers
+namespace JBOB.Controllers
 {
     public class UserController : ApiController
     {
