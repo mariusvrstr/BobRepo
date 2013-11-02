@@ -32,6 +32,20 @@ namespace JBOBTests.API
             controller.Add(card);
         }
 
+        [TestMethod]
+        public void GetCardByIDTest()
+        {
+            var controller = new CardController();
+            var card = controller.Get("2");
+
+            if (card == null)
+            {
+                Assert.Fail("Card get failed.");
+            }
+
+
+        }
+
 
     }
 }

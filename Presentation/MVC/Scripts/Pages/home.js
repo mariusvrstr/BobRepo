@@ -2,6 +2,7 @@
     var page = {};
 
     page.ux = {};
+    page.dataAccess = {};
 
     page.initialize = function() {
         $('#menu_home').addClass('active');
@@ -41,4 +42,37 @@ $.JBOB.page.ux = function () {
     };
 
     return ux;
+}();
+
+
+$.JBOB.page.dataAccess = function () {
+    var dataAccess = {};
+
+    var onAddCardComplete = function() {
+        console.log('Success');
+        dataAccess.GetCreatedCard();
+
+    }
+
+    dataAccess.createCard = function () {
+        // get data
+
+        var card = {
+            CardId : '', 
+            Name : $('#titleInput').val(),
+            Description : $('#Description').val(),
+            Category : $('#Category').val(),
+            Weight : '100'
+        };
+
+        $.JBOB.dataAccess.submitAjaxPostJsonRequest('http://localhost:1229/Home/AddCard', card, onAddCardComplete);
+    };
+
+    dataAccess.GetCreatedCard = function () {
+        var card = $.JBOB.dataAccess.submitAjaxGetRequest('http://localhost:1229/Home/Get/2',card);
+
+    }
+
+
+    return dataAccess;
 }();

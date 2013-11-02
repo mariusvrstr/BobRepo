@@ -32,11 +32,13 @@ namespace JBOB
 
         public Card GetCardById(string Id)
         {
-            var contextCard = Queryable.FirstOrDefault<Card>((from thisCard in this.Cards
-                                                              where thisCard.Id == Id
-                                                              select thisCard));
+            //var contextCard = Queryable.FirstOrDefault<Card>((from thisCard in this.Cards
+            //                                                  where thisCard.Id == Id
+            //                                                  select thisCard));
 
-            return contextCard;
+            var cards = GetAllCards();
+
+            return cards.FirstOrDefault();
         }
 
         public bool UpdateCard(Card card)

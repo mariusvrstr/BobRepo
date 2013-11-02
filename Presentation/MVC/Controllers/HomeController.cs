@@ -1,4 +1,5 @@
-﻿using Antlr.Runtime.Misc;
+﻿using System.Collections.Specialized;
+using Antlr.Runtime.Misc;
 using JBOB.Models;
 using System.Collections.Generic;
 using System.Web.Mvc;
@@ -100,9 +101,19 @@ namespace JBOB.Controllers
 
         public ActionResult About()
         {
+            var user = new User()
+            {
+                Login = "Test",
+                Password = "Test",
+                Name = "Test",
+                Surname = "Surname"
+            };
+
+           // var response = JsonApiConsumer.GetItemWithPost<User>(user, JsonApiConsumer.UserAdd);
+
             var viewModel = new AboutViewModel
             {
-                Users = JsonApiConsumer.GetItems(new User(), JsonApiConsumer.UserGetAll),
+               Users = JsonApiConsumer.GetItems<User>(JsonApiConsumer.UserGetAll),
                Title = "First load"
             };
             
@@ -124,6 +135,13 @@ namespace JBOB.Controllers
             var title = "Html refreshed";
 
             return this.PartialView("_aboutPartial", title);
+        }
+		
+		public Card Get(string Id)
+        {
+          
+            
+             return null;
         }
     }
 }
