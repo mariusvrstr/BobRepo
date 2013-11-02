@@ -36,16 +36,27 @@
                 <ColumnDefinition Width="Auto" />
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
-            <Rectangle Grid.Row="0" Grid.Column="0" Fill="#7fba00" HorizontalAlignment="Left" Height="150" Margin="0,0,12,12" VerticalAlignment="Top" Width="150"/>
-            <StackPanel Grid.Row="0" Grid.Column="1" Margin="0,0,12,0">
-                <TextBlock TextAlignment="Right" Text="{Binding Card.Name}" Foreground="#FF686868" FontFamily="Segoe UI" FontSize="36" TextWrapping="Wrap" />
-                <TextBlock TextAlignment="Right" Foreground="#FF2E2E2E" FontFamily="Segoe UI" FontSize="24">
+            <Rectangle Grid.Row="0" Grid.Column="0" Fill="#7fba00" HorizontalAlignment="Left" Height="120" Margin="0,0,12,12" VerticalAlignment="Top" Width="120"/>
+            <StackPanel Grid.Row="0" Grid.Column="1" Margin="0,0,12,12" Background="#efefef" Height="120">
+                <StackPanel Margin="12,12,12,12">
+                <TextBlock TextAlignment="Left" Text="{Binding Card.Name}" Foreground="#FF686868" FontFamily="Segoe UI" FontSize="36" TextTrimming="WordEllipsis" />
+                <TextBlock TextAlignment="Left" Foreground="#FF2E2E2E" FontFamily="Segoe UI" FontSize="24">
                     <Run Text="{Binding Card.Weight}"/>
                     <Run Text="{Binding Path=LocalizedResources.CardViewPointsString, Source={StaticResource LocalizedStrings}}" />
                 </TextBlock>
+                </StackPanel>
             </StackPanel>
             <TextBlock Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="2" Text="{Binding Card.Description}" TextWrapping="Wrap" Foreground="#FF2E2E2E" FontFamily="Segoe UI" FontSize="24" />
         </Grid>
     </Grid>
-
+    <phone:PhoneApplicationPage.ApplicationBar>
+        <shell:ApplicationBar IsVisible="True" IsMenuEnabled="True">
+            <shell:ApplicationBar.MenuItems>
+                <shell:ApplicationBarMenuItem Text="help" />
+                <shell:ApplicationBarMenuItem Text="feedback..." />
+            </shell:ApplicationBar.MenuItems>
+            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/check.png" Text="add to deck" />
+            <shell:ApplicationBarIconButton IconUri="/Assets/AppBar/share.png" Text="share"/>
+        </shell:ApplicationBar>
+    </phone:PhoneApplicationPage.ApplicationBar>
 </phone:PhoneApplicationPage>

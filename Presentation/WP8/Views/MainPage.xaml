@@ -15,7 +15,8 @@
     DataContext="{Binding Source={StaticResource ViewModelLocator}, Path=MainViewModel}"
     xmlns:views="clr-namespace:WP8.Views"
     xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity" 
-    xmlns:Command="clr-namespace:GalaSoft.MvvmLight.Command;assembly=GalaSoft.MvvmLight.Extras.WP8">
+    xmlns:Command="clr-namespace:GalaSoft.MvvmLight.Command;assembly=GalaSoft.MvvmLight.Extras.WP8"
+    ApplicationBar="{Binding MainApplicationBar, Mode=OneWay}">
 
     <i:Interaction.Triggers>
         <i:EventTrigger EventName="Loaded">
@@ -46,7 +47,7 @@
          -->
 
          <!--Panorama control-->
-        <phone:Panorama>
+        <phone:Panorama x:Name="panorama">
             <phone:Panorama.TitleTemplate>
                 <DataTemplate>
                     <StackPanel Margin="0,40,0,0">
@@ -61,7 +62,7 @@
             </phone:Panorama.Background>
 
             <!--Panorama item one-->
-            <phone:PanoramaItem Header="{Binding Path=LocalizedResources.PanoramaItem0Title, Source={StaticResource LocalizedStrings}}">
+            <phone:PanoramaItem Header="{Binding Path=LocalizedResources.PanoramaItem0Title, Source={StaticResource LocalizedStrings}}" Name="MainNavigation">
                 <Grid>
             	<TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" Foreground="#FF2E2E2E">
             		<Span>
@@ -107,6 +108,12 @@
             <phone:PanoramaItem Header="{Binding Path=LocalizedResources.PanoramaItem3Title, Source={StaticResource LocalizedStrings}}">
                 <views:ProfileControl />    
             </phone:PanoramaItem>
+
+            <i:Interaction.Triggers>
+                <i:EventTrigger EventName="SelectionChanged">
+                    <Command:EventToCommand Command="{Binding PanoramaSelectedIndexChangedCommand, Mode=OneWay}" CommandParameter="{Binding SelectedIndex, ElementName=panorama, Mode=OneWay}"/>
+                </i:EventTrigger>
+            </i:Interaction.Triggers>
         </phone:Panorama>
 
         <!--Uncomment to see an alignment grid to help ensure your controls are

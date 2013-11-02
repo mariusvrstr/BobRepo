@@ -13,15 +13,15 @@
     	<Rectangle Fill="#FFF25022" HorizontalAlignment="Left" Height="150" VerticalAlignment="Top" Width="150" Margin="0"/>
     	<Rectangle Fill="#FF7FBA00" HorizontalAlignment="Left" Height="150" Margin="0,162,0,0" VerticalAlignment="Top" Width="150"/>
     	<Rectangle Fill="#FF01A4EF" HorizontalAlignment="Left" Height="150" Margin="0,324,0,0" VerticalAlignment="Top" Width="150"/>
-    	<TextBlock HorizontalAlignment="Left" Margin="64,84,0,0" TextWrapping="Wrap" Text="215" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="48"/>
-    	<TextBlock HorizontalAlignment="Left" Margin="116,244,0,0" TextWrapping="Wrap" Text="3" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="48"/>
-    	<TextBlock HorizontalAlignment="Left" Margin="63,404,0,0" TextWrapping="Wrap" Text="359" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="48"/>
+    	<TextBlock HorizontalAlignment="Left" Margin="64,84,0,0" TextWrapping="Wrap" Text="213" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="48"/>
+    	<TextBlock HorizontalAlignment="Left" Margin="116,244,0,0" TextWrapping="Wrap" Text="1" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="48"/>
+    	<TextBlock HorizontalAlignment="Left" Margin="63,404,0,0" TextWrapping="Wrap" Text="120" VerticalAlignment="Top" FontFamily="Segoe UI" FontSize="48"/>
     	<TextBlock HorizontalAlignment="Left" Margin="162,12,0,0" TextWrapping="Wrap" Text="Ranking" VerticalAlignment="Top" Foreground="#FF2E2E2E" FontFamily="Segoe UI" FontSize="32"/>
     	<TextBlock HorizontalAlignment="Left" Margin="162,164,0,0" TextWrapping="Wrap" Text="Badges" VerticalAlignment="Top" Foreground="#FF2E2E2E" FontFamily="Segoe UI" FontSize="32"/>
     	<TextBlock HorizontalAlignment="Left" Margin="162,325,0,0" TextWrapping="Wrap" Text="Points" VerticalAlignment="Top" Foreground="#FF2E2E2E" FontFamily="Segoe UI" FontSize="32"/>
-    	<TextBlock HorizontalAlignment="Left" Margin="162,58,0,0" TextWrapping="Wrap" Text="215" VerticalAlignment="Top" Foreground="#FF2E2E2E" FontFamily="Segoe UI" FontSize="26.667"/>
-    	<TextBlock HorizontalAlignment="Left" Margin="162,211,0,0" TextWrapping="Wrap" Text="3/20" VerticalAlignment="Top" Foreground="#FF2E2E2E" FontFamily="Segoe UI" FontSize="26.667"/>
-    	<TextBlock HorizontalAlignment="Left" Margin="162,371,0,0" TextWrapping="Wrap" Text="359" VerticalAlignment="Top" Foreground="#FF2E2E2E" FontFamily="Segoe UI" FontSize="26.667"/>
+    	<TextBlock HorizontalAlignment="Left" Margin="162,58,0,0" TextWrapping="Wrap" Text="213" VerticalAlignment="Top" Foreground="#FF2E2E2E" FontFamily="Segoe UI" FontSize="26.667"/>
+    	<TextBlock HorizontalAlignment="Left" Margin="162,211,0,0" TextWrapping="Wrap" Text="1/20" VerticalAlignment="Top" Foreground="#FF2E2E2E" FontFamily="Segoe UI" FontSize="26.667"/>
+    	<TextBlock HorizontalAlignment="Left" Margin="162,371,0,0" TextWrapping="Wrap" Text="120" VerticalAlignment="Top" Foreground="#FF2E2E2E" FontFamily="Segoe UI" FontSize="26.667"/>
         
     </Grid>
 </UserControl>
