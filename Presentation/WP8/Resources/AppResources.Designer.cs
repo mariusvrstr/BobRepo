@@ -97,6 +97,46 @@ namespace WP8.Resources {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Scoreboard.
+        /// </summary>
+        public static string LiveTileExampleBackTitle {
+            get {
+                return ResourceManager.GetString("LiveTileExampleBackTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ranking: 215
+        ///Badges: 3/20
+        ///Points: 359.
+        /// </summary>
+        public static string LiveTileExampleLargeTileContent {
+            get {
+                return ResourceManager.GetString("LiveTileExampleLargeTileContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Ranking: 215
+        ///Badges: 3/20
+        ///Points: 359.
+        /// </summary>
+        public static string LiveTileExampleMediumTileContent {
+            get {
+                return ResourceManager.GetString("LiveTileExampleMediumTileContent", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Plexus.
+        /// </summary>
+        public static string LiveTileExampleTitle {
+            get {
+                return ResourceManager.GetString("LiveTileExampleTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Loading....
         /// </summary>
         public static string Loading {
