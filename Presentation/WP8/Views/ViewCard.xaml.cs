@@ -16,5 +16,15 @@ namespace WP8.Views
         {
             InitializeComponent();
         }
+
+        private void ApplicationBarCheckButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Actioned. Added to Deck.");
+        }
+
+        private void ApplicationBarShareButton_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Shared to Twitter.");
+        }
     }
 }
