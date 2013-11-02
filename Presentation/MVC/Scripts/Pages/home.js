@@ -36,7 +36,15 @@ $.JBOB.page.ux = function () {
         var pos = $('#profBadge').position();
         $('html, body').stop().animate({ scrollLeft: pos.left + 'px' }, 1000, 'easeOutQuint');
     };
-    ux.scrollCreate = function() {
+    ux.scrollCreate = function () {
+        
+        $("#ranking_value").text('213');
+        $("#rankingAll_value").text('213/215');
+        $("#badges_value").text('1');
+        $("#badgesAll_value").text('1/23');
+        $("#points_value").text('120');
+        $("#pointsAll_value").text('120');
+
         var pos = $('#profCreate').position();
         $('html, body').stop().animate({ scrollLeft: pos.left + 'px' }, 1000, 'easeOutQuint');
     };
@@ -52,11 +60,10 @@ $.JBOB.page.dataAccess = function () {
         console.log('Success');
         dataAccess.GetCreatedCard();
 
-    }
+    };
 
     dataAccess.createCard = function () {
-        // get data
-
+        
         var card = {
             CardId : '', 
             Name : $('#titleInput').val(),
@@ -68,10 +75,10 @@ $.JBOB.page.dataAccess = function () {
         $.JBOB.dataAccess.submitAjaxPostJsonRequest('http://localhost:1229/Home/AddCard', card, onAddCardComplete);
     };
 
-    dataAccess.GetCreatedCard = function () {
-        var card = $.JBOB.dataAccess.submitAjaxGetRequest('http://localhost:1229/Home/Get/2',card);
+    dataAccess.GetCreatedCard = function() {
+        var card = $.JBOB.dataAccess.submitAjaxGetRequest('http://localhost:1229/Home/Get/2', card);
 
-    }
+    };
 
 
     return dataAccess;
