@@ -1,19 +1,35 @@
+using System.Windows.Input;
 using GalaSoft.MvvmLight;
+using GalaSoft.MvvmLight.Command;
+using Microsoft.Phone.Shell;
+using WP8.BusinessLayer.Contracts.Logic;
 
 namespace WP8.ViewModel
 {
     public class MainViewModel : ViewModelBase
     {
-        public MainViewModel()
+        public MainViewModel(IGameLogic gameLogic)
         {
-            ////if (IsInDesignMode)
-            ////{
-            ////    // Code runs in Blend --> create design time data.
-            ////}
-            ////else
-            ////{
-            ////    // Code runs "for real"
-            ////}
+            LoadedCommand = new RelayCommand(() => OnLoaded());
+            GameLogic = gameLogic;
+        }
+
+        public ICommand LoadedCommand
+        {
+            get;
+            private set;
+        }
+
+        public IGameLogic GameLogic { get; private set; }
+
+        private void OnLoaded()
+        {
+            doUpdateFlipTile();
+        }
+
+        private void doUpdateFlipTile()
+        {
+            GameLogic.UpdateScores();
         }
     }
 }
