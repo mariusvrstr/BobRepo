@@ -49,9 +49,18 @@ namespace JBOB.Controllers
 		
 		public Card Get(string Id)
         {
+            var services = ServiceFactory.CreateCardService();
+            var card=services.GetCardById(Id);
+            return card;
+        }
+
+        public void AddCard(Card card)
+        {
+            var services = ServiceFactory.CreateCardService();
+            services.AddCard(card);
             
-            
-            return null;
+
+            //return View(viewModel);
         }
     }
 }
