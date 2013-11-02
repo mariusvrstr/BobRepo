@@ -353,7 +353,7 @@ ul.navbar-nav {
                     #profBadge ul #bdgEight .bdgStar {
                     background: url("images/starSprite.png") 0px -103px no-repeat;
                 }
-   #cardSect section#profCreate , #cardSect section#viewCard  {
+   #cardSect section#profCreate , #cardSect section.viewCard  {
         float:left;
         max-width:450px;
         width:auto;
@@ -422,40 +422,40 @@ ul.navbar-nav {
        padding-left: 10px;
        display: block;
    }
-   #hide{
+  .hide {
        display:none;
    }
-   #cardSect section#viewCard { margin-top: 30px;}
-    #cardSect section#viewCard ul li.widFloat {
+   #cardSect section.viewCard { margin-top: 30px;}
+    #cardSect section.viewCard ul li.widFloat {
         width: 250px;
         float: left;
     }
-   #cardSect section#viewCard h2 {
+   #cardSect section.viewCard h2 {
        font-family: "Segoe UI";
    }
   
-   #cardSect section#viewCard img {
+   #cardSect section.viewCard img {
        height: 100px;
        width: 100px;
        float: left;
    }
-   #cardSect section#viewCard ul {
+   #cardSect section.viewCard ul {
        margin: 0px;
        padding: 0px;
        display: block;
    }
-   #cardSect section#viewCard ul li {
+   #cardSect section.viewCard ul li {
        list-style-type: none;
        display: inline-block;
        padding: 0px;
        margin: 0px;
        width: 100%;
    }
-    #cardSect section#viewCard ul#xtra li {
+    #cardSect section.viewCard ul#xtra li {
         width: 30%;
         float: left;
     }
-    #cardSect section#viewCard ul#xtra li.widFloat {
+    #cardSect section.viewCard ul#xtra li.widFloat {
         width: 70%;
     }
 /*****COLOURS*****/

@@ -62,13 +62,12 @@ namespace JBOB.Controllers
             return "Object Mother Initialized";
         }
 
-        public void AddCard(Card card)
+        public JsonResult AddCard(Card card)
         {
             var services = ServiceFactory.CreateCardService();
-            services.AddCard(card);
-            
+            var user =services.AddCard(card);
 
-            //return View(viewModel);
+            return this.Json(user, JsonRequestBehavior.AllowGet);
         }
     }
 }

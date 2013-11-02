@@ -58,14 +58,20 @@ $.JBOB.page.dataAccess = function () {
 
     var onAddCardComplete = function() {
         console.log('Success');
+                
+        if ($('#cardDetail').hasClass('hide')) {
+            $('#cardDetail').removeClass('hide');
+        }
+        
+        if ($('#cardDetail').hasClass('hide')) {
+            $('#cardDetail').removeClass('hide');
+        }
+
         dataAccess.GetCreatedCard();
 
     };
     
-    $("#hide").toggleClass('viewCard');
-
     dataAccess.createCard = function () {
-        
         var card = {
             CardId : '', 
             Name : $('#titleInput').val(),
@@ -77,9 +83,8 @@ $.JBOB.page.dataAccess = function () {
         $.JBOB.dataAccess.submitAjaxPostJsonRequest('http://localhost:1229/Home/AddCard', card, onAddCardComplete);
     };
 
-    dataAccess.GetCreatedCard = function() {
+    dataAccess.GetCreatedCard = function () {
         var card = $.JBOB.dataAccess.submitAjaxGetRequest('http://localhost:1229/Home/Get/2', card);
-
     };
 
 
