@@ -1,15 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Diagnostics;
-using System.Net;
-using System.Runtime.Serialization.Json;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Input;
-using System.Windows.Threading;
 using GalaSoft.MvvmLight;
 using GalaSoft.MvvmLight.Command;
 using JBOB.Cards;
+using Microsoft.Phone.Controls;
+using Microsoft.Phone.Shell;
 using WP8.BusinessLayer.Common;
 using WP8.BusinessLayer.Contracts.Logic;
 using WP8.Resources;
@@ -22,6 +20,7 @@ namespace WP8.ViewModel
         private const string PROPERTY_IS_PROGRESS_VISIBLE = "IsProgressIndicatorVisible";
         private const string PROPERTY_INFORMATION = "Information";
         private const string PROPERTY_IS_INFORMATION_VISIBLE = "IsInformationVisible";
+        private const string PROPERTY_SELECTED_CARD = "SelectedCard";
 
         public DepotViewModel(IDepotLogic depotLogic)
         {
@@ -32,10 +31,35 @@ namespace WP8.ViewModel
             LoadedCommand = new RelayCommand(() => OnLoaded());
         }
 
+        private void GoToCardView(Card card)
+        {
+            PhoneApplicationService.Current.State[Constants.CARD_SELECTED_APPLICATIONSERVICE_SETTING] = card;
+            Navigate.ToPage(Constants.URL_CARD_VIEW);
+        }
+
         public ICommand LoadedCommand
         {
             get;
             private set;
+        }
+
+        private Card selectedCard;
+        public Card SelectedCard
+        {
+            get
+            {
+                return selectedCard;
+            }
+            set
+            {
+                if (value == null || selectedCard == value)
+                {
+                    return;
+                }
+                selectedCard = value;
+                GoToCardView(selectedCard);
+                RaisePropertyChanged(PROPERTY_SELECTED_CARD);
+            }
         }
 
         private void OnLoaded()
