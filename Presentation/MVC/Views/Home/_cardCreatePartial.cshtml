@@ -14,7 +14,7 @@
         <li>
             <div class="form-group">
                 <label for="titleInput">Card Title</label>
-                <input type="text" class="form-control" id="titleInput" placeholder="First Name">
+                <input type="text" class="form-control" style="width:360px" id="titleInput" placeholder="Card Title">
             </div>
             
         </li>
@@ -29,9 +29,9 @@
         
         <li>
             <div class="form-group">
-                <label for="catDropdown" id="catSelect">Catergory</label>
+                <label for="catDropdown" id="catSelect" >Catergory</label>
                 
-                <div class="btn-group" id="catDropdown">
+                <div class="btn-group" id="catDropdown" >
                     <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
                         Please Select <span class="caret"></span>
                     </button>
@@ -53,16 +53,23 @@
         </li>
     </ul>
         
-  <button type="button" class="btn btn-default">Submit</button>
+  <button type="button" class="createBtn btn btn-default">Submit</button>
 
 </section>
 <section id="viewCard">
-    <div>
-        <img src="/"/>
-        <h2>title</h2>
-        <p>text text text</p>
-        <p>Hash Tags</p>
-        <div>button Share</div>
-        <div>button action</div>
+    <div class="coolBorder">
+        <ul id="xtra">
+            <li><img class="img-thumbnail" src="~/Content/images/CotlandsSite.jpg" id="viewCardPic"/></li>
+            <li class="widFloat"><h2><label id="cardViewTitle">Title of Awesomeness</label></h2></l>
+            <li style="width:350px">
+                    <ul style="width: 100%">
+                        
+                        <li style="width: 100%; padding: 5px"><p><span id="descripCardStuff">Cotlands is committed to filling the medico-socio-economic gaps in communities, by providing a range of services that will ensure the provision of food security, reverse the spread of HIV/AIDS, create jobs, and foster self-sustainability</span></p></li>
+                        <li style="width: 100%; background-color: #efefef"><p><span id="hashTags">Hash Tags</span></p></li>
+                    </ul>
+                    <button type="button" id="Share" class="btn btn-default">Share</button>
+                    <button type="button" id="actionCard" class="btn btn-default">Action</button>
+            </li>
+        </ul>
     </div>
 </section>
