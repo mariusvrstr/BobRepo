@@ -49,9 +49,9 @@ namespace JBOB.Controllers
 		
 		public Card Get(string Id)
         {
-          
             
-             return null;
+            
+            return null;
         }
     }
 }
