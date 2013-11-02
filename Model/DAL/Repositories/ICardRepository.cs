@@ -8,7 +8,7 @@ namespace JBOB.Repositories
         Card AddCard(Card card);
         IQueryable<Card> GetAllCards();
         void DeleteAllCards();
-        Card GetCardById(string Id);
+        Card GetCardById(int Id);
         bool UpdateCard(Card card);
     }
 }

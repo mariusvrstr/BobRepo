@@ -32,10 +32,10 @@ namespace JBOB.Services.Services
             return mappedCards;
         }
 
-        public Card GetCardById(string id)
+        public Card GetCardById(int cardId)
         {
             var context = DataContextFactory.CreateContext();
-            var card = context.CardRepository.GetCardById(id);
+            var card = context.CardRepository.GetCardById(cardId);
 
             return card.Map();
 

@@ -459,6 +459,10 @@ ul.navbar-nav {
         width: 70%;
     }
 
+    #newCard_selectedCategory {
+        padding-right: 10px;
+    }
+
     .selectedItem {
         background-color: #FFFFFF;
         border: 1px solid #2e2e2e;

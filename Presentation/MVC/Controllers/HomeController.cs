@@ -48,10 +48,10 @@ namespace JBOB.Controllers
             return this.PartialView("_aboutPartial", title);
         }
 		
-		public Card Get(string Id)
+		public Card Get(int id)
         {
             var services = ServiceFactory.CreateCardService();
-            var card=services.GetCardById(Id);
+            var card=services.GetCardById(id);
             return card;
         }
 

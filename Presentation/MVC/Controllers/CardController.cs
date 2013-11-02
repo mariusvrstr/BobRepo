@@ -17,10 +17,10 @@ namespace JBOB.Controllers
         }
 
         // GET api/card/5
-        public Card Get(string Id)
+        public Card Get(int id)
         {
             var cardService = ServiceFactory.CreateCardService();
-            var card = cardService.GetCardById(Id);
+            var card = cardService.GetCardById(id);
 
             return card;
         }

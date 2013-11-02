@@ -12,8 +12,8 @@
 
         public static void Clear()
         {
-            // Cards.Clear();
             Users.Clear();
+            Cards.Clear();
         }
     }
 }

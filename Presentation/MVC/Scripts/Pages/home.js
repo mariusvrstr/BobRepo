@@ -56,34 +56,38 @@ $.JBOB.page.ux = function () {
 $.JBOB.page.dataAccess = function () {
     var dataAccess = {};
 
-    var onAddCardComplete = function() {
-                
-        if ($('#cardDetail').hasClass('hide')) {
-            $('#cardDetail').removeClass('hide');
+    var onAddCardComplete = function(card) {
+
+        var createdCardId = card.CardId;
+
+        if ((createdCardId != undefined) && (createdCardId !='')) {
+            dataAccess.GetCreatedCard(createdCardId);
         }
+    };
+
+    var onGetCardComplete = function(card) {
+        // Here the card will be updated and details shown
+    };
+    
+    dataAccess.createCard = function () {
+        var card = {
+            CardId: null,
+            Id: '',
+            Name: $('#newCard_title').val(),
+            Description: $('#newCard_description').val(),
+            Category: $('#newCard_selectedCategory').text(),
+            Weight : '100'
+        };
         
         if ($('#cardDetail').hasClass('hide')) {
             $('#cardDetail').removeClass('hide');
         }
 
-        dataAccess.GetCreatedCard();
-
-    };
-    
-    dataAccess.createCard = function () {
-        var card = {
-            CardId : '', 
-            Name : $('#titleInput').val(),
-            Description : $('#Description').val(),
-            Category : $('#Category').val(),
-            Weight : '100'
-        };
-
         $.JBOB.dataAccess.submitAjaxPostJsonRequest('http://localhost:1229/Home/AddCard', card, onAddCardComplete);
     };
 
-    dataAccess.GetCreatedCard = function () {
-        var card = $.JBOB.dataAccess.submitAjaxGetRequest('http://localhost:1229/Home/Get/2', card);
+    dataAccess.GetCreatedCard = function (id) {
+        $.JBOB.dataAccess.submitAjaxGetRequest('http://localhost:1229/Home/Get/' + id, onGetCardComplete);
     };
 
 
