@@ -76,9 +76,9 @@
       <Project>{dcde14f5-8ff6-434f-871d-70ecf3ef5be8}</Project>
       <Name>Database</Name>
     </ProjectReference>
-    <ProjectReference Include="..\Model\Services\Services\Services.csproj">
-      <Project>{9bfcbac4-37a9-4852-acf9-cfe80d23ad16}</Project>
-      <Name>Services</Name>
+    <ProjectReference Include="..\Presentation\MVC\Web.csproj">
+      <Project>{a70a04ca-6a34-4e8d-85b1-eb7fb5f4450f}</Project>
+      <Name>Web</Name>
     </ProjectReference>
     <ProjectReference Include="..\TestData\TestData.csproj">
       <Project>{61a7a4b2-b3b6-4905-9c05-ba0ef9c2b88e}</Project>
