@@ -169,6 +169,10 @@ ul.navbar-nav {
 .blue {
     background-color:#01a4ef;
 }
+.blueimg {
+    background-image: url("images/blueblock.jpg");
+    background-repeat: no-repeat;
+}
 .yellow {
     background-color:#ffb901;
 }
@@ -184,7 +188,10 @@ ul.navbar-nav {
 .yellow label{
     background-color:#ff8601;
 } 
-      
+  .soccer {
+      background-image: url("images/soccerone.jpg");
+      background-repeat: no-repeat;
+  }    
 /**Profile Page**/
 
 #profSect {
@@ -206,7 +213,7 @@ ul.navbar-nav {
         height:120px;
     }      
     #profSect #profImg img {
-        height: 100%;
+        height: 150px;
         width: 100%;
     }
         #profSect section.profContact {

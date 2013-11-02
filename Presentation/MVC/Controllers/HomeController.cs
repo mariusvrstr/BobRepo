@@ -1,5 +1,6 @@
 ﻿using System.Collections.Specialized;
 using Antlr.Runtime.Misc;
+using JBOB.Cards;
 using JBOB.Models;
 using System.Collections.Generic;
 using System.Web.Mvc;
