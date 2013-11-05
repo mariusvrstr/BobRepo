@@ -1,7 +1,7 @@
 ﻿using System;
+using JBOB.API.Interaction;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using JBOB.Serendipty;
-using Services.Interaction;
 
 namespace SerendiptyTestProject
 {

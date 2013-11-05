@@ -1,7 +1,7 @@
 ﻿using System.Linq;
 using System.Web.Http;
 
-namespace JBOB.Services.App_Start
+namespace JBOB.API.App_Start
 {
     public static class WebApiConfig
     {

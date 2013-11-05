@@ -1,24 +1,12 @@
 ﻿using System.Collections.Generic;
 using System.Web.Http;
+using JBOB.API.Interaction;
 using JBOB.Users;
-using Services.Interaction;
 
-namespace JBOB.Controllers
+namespace JBOB.API.Controllers
 {
     public class UserController : ApiController
     {
-
-        /* Exception: throw new HttpResponseException(HttpStatusCode.BadRequest)
-         * http://localhost:1079/api/User
-         * 
-         * JsonResult / return this.Json(partialAboutBoxJson, JsonRequestBehavior.AllowGet);
-         * 
-         * 
-         * 
-         * 
-         * */
-
-
 
         // GET api/user
         public IEnumerable<User> Get()
@@ -41,17 +29,16 @@ namespace JBOB.Controllers
         // POST api/user
         public User Add([FromBody]User user)
         {
+            if (user == null) return null;
+
             var userService = ServiceFactory.CreateUserService();
-            var addedUser = userService.AddUser(user);
-
-            return addedUser;
-
+            return userService.AddUser(user);
         }
 
-        // PUT api/user/5
+     /*   // PUT api/user/5
         public void Update(int id, [FromBody]User user)
         {
-        }
+        } */
 
         // DELETE api/user/5
         public void Delete(int id)

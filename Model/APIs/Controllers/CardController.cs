@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.Web.Http;
+using JBOB.API.Interaction;
 using JBOB.Cards;
-using Services.Interaction;
 
-namespace JBOB.Controllers
+namespace JBOB.API.Controllers
 {
     public class CardController : ApiController
     {
@@ -35,10 +35,10 @@ namespace JBOB.Controllers
 
         }
 
-        // PUT api/card/5
-        public void Update(int id, [FromBody]Card user)
+       /* // PUT api/card/5
+        public void Update([FromBody]Card user, int id = 0)
         {
-        }
+        } */
 
         // DELETE api/card/5
         public void Delete(int id)

@@ -1,10 +1,10 @@
-﻿namespace Services.ServiceStubs
-{
-    using System.Collections.Generic;
-    using JBOB.Cards;
-    using JBOB.Mapper;
-    using JBOB.TestData;
+﻿using System.Collections.Generic;
+using JBOB.Cards;
+using JBOB.Mapper;
+using JBOB.TestData;
 
+namespace JBOB.API.ServicesStubs
+{
     public class CardServiceStub : ICardService
     {
 
@@ -25,7 +25,7 @@
             return users;
         }
 
-        public Card GetCardById(string id)
+        public Card GetCardById(int id)
         {
             var card = ObjectMother.Cards.Mandela.Map();
             return card;

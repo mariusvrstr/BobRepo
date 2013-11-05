@@ -1,15 +1,11 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using JBOB.API.Services;
+using JBOB.API.ServicesStubs;
 using JBOB.Cards;
 using JBOB.Serendipty;
-using JBOB.Users;
 using JBOB.Services;
-using Services.ServiceStubs;
-using JBOB.Services.Services;
+using JBOB.Users;
 
-namespace Services.Interaction
+namespace JBOB.API.Interaction
 {
     public static class ServiceFactory
     {

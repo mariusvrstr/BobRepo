@@ -1,15 +1,12 @@
-﻿using System.Collections.Specialized;
-using Antlr.Runtime.Misc;
+﻿using System.Collections.Generic;
+using System.Web.Mvc;
 using JBOB.Cards;
 using JBOB.Models;
-using System.Collections.Generic;
-using System.Web.Mvc;
 using JBOB.TestData;
 using JBOB.Users;
 using JBOB.Web.HtmlHelpers;
-using Services.Interaction;
 
-namespace JBOB.Controllers
+namespace JBOB.Web.Controllers
 {
     public class HomeController : Controller
     {
@@ -20,11 +17,11 @@ namespace JBOB.Controllers
 
         public ActionResult About()
         {
-            var services = ServiceFactory.CreateUserService();
+           // var services = ServiceFactory.CreateUserService();
 
             var viewModel = new AboutViewModel
             {
-               Users = services.GetAllUsers(),
+               Users = JsonApiConsumer.GetItems<User>(JsonApiConsumer.UserGetFull),
                Title = "First load"
             };
             
@@ -35,7 +32,7 @@ namespace JBOB.Controllers
         {
             var viewModel = new AboutViewModel
             {
-             //   Users = userSetB
+                Users = JsonApiConsumer.GetItems<User>(JsonApiConsumer.UserGetFull)
             };
 
             return this.Json(viewModel.Users, JsonRequestBehavior.AllowGet);
@@ -44,14 +41,14 @@ namespace JBOB.Controllers
         public ActionResult GetUserHtml()
         {
             var title = "Html refreshed";
-
             return this.PartialView("_aboutPartial", title);
         }
 		
 		public Card Get(int id)
-        {
-            var services = ServiceFactory.CreateCardService();
-            var card=services.GetCardById(id);
+		{
+		    var url = string.Format("{0}/{1}", JsonApiConsumer.CardGetFull, id);
+            var card = JsonApiConsumer.GetItem<Card>(url);
+
             return card;
         }
 
@@ -64,10 +61,9 @@ namespace JBOB.Controllers
 
         public JsonResult AddCard(Card card)
         {
-            var services = ServiceFactory.CreateCardService();
-            var user =services.AddCard(card);
+           var savedCard = JsonApiConsumer.PostJsonToApi<Card>(card, JsonApiConsumer.BaseUrl, JsonApiConsumer.CardAddPath);
 
-            return this.Json(user, JsonRequestBehavior.AllowGet);
+           return this.Json(savedCard, JsonRequestBehavior.AllowGet);
         }
     }
 }

@@ -1,12 +1,11 @@
 ﻿
-namespace JBOB.Services
-{
-    using System.Collections.Generic;
-    using System.Linq;
-    using JBOB.Interaction;
-    using JBOB.Mapper;
-    using JBOB.Users;
+using System.Collections.Generic;
+using JBOB.Interaction;
+using JBOB.Mapper;
+using JBOB.Users;
 
+namespace JBOB.API.Services
+{
     public class UserService : IUserService
     {
         public User AddUser(User user)

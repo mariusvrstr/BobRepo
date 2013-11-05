@@ -1,7 +1,7 @@
 ﻿using System.Web.Mvc;
 using System.Web.Routing;
 
-namespace JBOB.Services.App_Start
+namespace JBOB.API.App_Start
 {
     public class RouteConfig
     {

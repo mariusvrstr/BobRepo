@@ -1,11 +1,11 @@
 ﻿
-namespace Services.ServiceStubs
-{
-    using System.Collections.Generic;
-    using JBOB.Mapper;
-    using JBOB.TestData;
-    using JBOB.Users;
+using System.Collections.Generic;
+using JBOB.Mapper;
+using JBOB.TestData;
+using JBOB.Users;
 
+namespace JBOB.API.ServicesStubs
+{
     public class UserServiceStub : IUserService
     {
 

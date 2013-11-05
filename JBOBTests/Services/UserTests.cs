@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
+using JBOB.API.Interaction;
 using JBOB.TestData;
 using JBOB.Users;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Services.Interaction;
 using TestData;
 
 namespace JBOBTests.Services

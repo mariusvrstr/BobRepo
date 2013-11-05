@@ -1,9 +1,9 @@
 ﻿using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Routing;
-using JBOB.Services.App_Start;
+using JBOB.API.App_Start;
 
-namespace JBOB.Services
+namespace JBOB.API
 {
     // Note: For instructions on enabling IIS6 or IIS7 classic mode, 
     // visit http://go.microsoft.com/?LinkId=9394801

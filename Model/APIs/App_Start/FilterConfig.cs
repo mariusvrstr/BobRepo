@@ -1,6 +1,6 @@
 ﻿using System.Web.Mvc;
 
-namespace JBOB.Services.App_Start
+namespace JBOB.API.App_Start
 {
     public class FilterConfig
     {

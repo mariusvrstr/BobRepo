@@ -3,12 +3,12 @@ using JBOB.Cards;
 using JBOB.Interaction;
 using JBOB.Mapper;
 
-namespace JBOB.Services.Services
+namespace JBOB.API.Services
 {
     public class CardService : ICardService
     {
 
-        public Card AddCard(Card card)
+        public Card AddCard(Card card = null)
         {
             var context = DataContextFactory.CreateContext();
             var addedCard = context.CardRepository.AddCard(card.Map());
@@ -32,10 +32,10 @@ namespace JBOB.Services.Services
             return mappedCards;
         }
 
-        public Card GetCardById(int cardId)
+        public Card GetCardById(int id)
         {
             var context = DataContextFactory.CreateContext();
-            var card = context.CardRepository.GetCardById(cardId);
+            var card = context.CardRepository.GetCardById(id);
 
             return card.Map();
 
