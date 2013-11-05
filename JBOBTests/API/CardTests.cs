@@ -36,7 +36,7 @@ namespace JBOBTests.API
         public void GetCardByIDTest()
         {
             var controller = new CardController();
-            var card = controller.Get("2");
+            var card = controller.Get(2);
 
             if (card == null)
             {
